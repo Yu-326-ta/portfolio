@@ -4,6 +4,10 @@ import jsImage from "../Images/js.png";
 import phpImage from "../Images/php.png";
 import laravelImage from "../Images/laravel.png";
 import profileImage from "../Images/sibainu.jpg";
+import mysqlImage from "../Images/mysql.jpg";
+import dockerImage from "../Images/docker.jpg";
+import firebaseImage from "../Images/firebase.jpg";
+import awsImage from "../Images/aws.png";
 import htmlcssImage from "../Images/htmlcss.png";
 
 export const HomePage = () => {
@@ -42,10 +46,28 @@ export const HomePage = () => {
               <img src={laravelImage} />
               <h4>Laravel</h4>
             </div>
+            <div class="col-md-4 services">
+              <img src={mysqlImage} />
+              <h4>MySQL</h4>
+            </div>
+            <div class="col-md-4 services">
+              <img src={dockerImage} />
+              <h4>Docker</h4>
+            </div>
+            <div class="col-md-4 services">
+              <img src={firebaseImage} />
+              <h4>Firebase</h4>
+            </div>
+            <div class="col-md-4 services">
+              <img src={awsImage} />
+              <h4>AWS</h4>
+            </div>
           </div>
-          <button type="button" class="btn btn-primary">
-            スキル一覧
-          </button>
+          <div class="skillButton">
+            <button type="button" class="btn btn-primary">
+              スキル一覧
+            </button>
+          </div>
         </div>
       </section>
     </div>

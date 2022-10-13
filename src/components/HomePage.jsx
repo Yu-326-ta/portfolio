@@ -7,20 +7,18 @@ import profileImage from "../Images/sibainu.jpg";
 import mysqlImage from "../Images/mysql.jpg";
 import dockerImage from "../Images/docker.jpg";
 import firebaseImage from "../Images/firebase.jpg";
+import iconImage from "../Images/icon.jpg";
 import awsImage from "../Images/aws.png";
 import htmlcssImage from "../Images/htmlcss.png";
 
 export const HomePage = () => {
   return (
     <div className="container text-center">
-      <h1>Shin Code</h1>
+      <h1>I'm Yuta Yoshinaga</h1>
 
-      <img src={profileImage} className="profileImage" />
+      <img src={iconImage} className="profileImage" />
 
-      <p>
-        ShinCodeです。普段は個人でWeb系の情報発信をYoutubeやTwitterにて行っています。主にHTML/CSS/Javascript/Reactメインに取り扱っています。趣味は個人でプログラミングの撮影を行うことです。
-        ShinCodeです。普段は個人でWeb系の情報発信をYoutubeやTwitterにて行っています。主にHTML/CSS/Javascript/Reactメインに取り扱っています。趣味は個人でプログラミングの撮影を行うことです。
-      </p>
+      <p>吉永湧太です。九州工業大学に通っています。</p>
 
       <section id="skill">
         <div class="text-center">

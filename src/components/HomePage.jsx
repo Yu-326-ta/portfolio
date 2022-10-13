@@ -10,15 +10,47 @@ import firebaseImage from "../Images/firebase.jpg";
 import iconImage from "../Images/icon.jpg";
 import awsImage from "../Images/aws.png";
 import htmlcssImage from "../Images/htmlcss.png";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import { shadows } from "@mui/system";
 
 export const HomePage = () => {
   return (
     <div className="container text-center">
       <h1>I'm Yuta Yoshinaga</h1>
-
       <img src={iconImage} className="profileImage" />
 
-      <p>吉永湧太です。九州工業大学に通っています。</p>
+      <Card
+        sx={{
+          display: "flex",
+          ml: 35,
+          mr: 35,
+          mt: 10,
+          justifyContent: "center",
+          boxShadow: 3,
+        }}
+      >
+        <CardContent>
+          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+            九州工業大学
+          </Typography>
+          <Typography variant="h5" component="div">
+            吉永湧太
+          </Typography>
+          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+            年齢：20
+          </Typography>
+          <Typography variant="body2">
+            九州工業大学学部3年の吉永湧太です。
+            <br />
+            主にWebサービス、Webアプリケーションの構築をしています。
+            <br />
+            現在AWSの勉強中
+          </Typography>
+        </CardContent>
+      </Card>
 
       <section id="skill">
         <div class="text-center">

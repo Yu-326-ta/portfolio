@@ -8,6 +8,7 @@ import mysqlImage from "../Images/mysql.jpg";
 import dockerImage from "../Images/docker.jpg";
 import firebaseImage from "../Images/firebase.jpg";
 import iconImage from "../Images/icon.jpg";
+import cloudpractitionerImage from "../Images/cloudpractitioner.jpg";
 import awsImage from "../Images/aws.png";
 import htmlcssImage from "../Images/htmlcss.png";
 import Box from "@mui/material/Box";
@@ -47,7 +48,8 @@ export const HomePage = () => {
             <br />
             主にWebサービス、Webアプリケーションの構築をしています。
             <br />
-            現在AWSの勉強中
+            AWS Certified Cloud Practitioner取得
+            <img src={cloudpractitionerImage} className="awsImage" />
           </Typography>
         </CardContent>
       </Card>

@@ -19,6 +19,9 @@ export const Header = () => {
           <li>
             <a href="https://github.com/Yu-326-ta">Github</a>
           </li>
+          <li>
+            <a href="https://www.credly.com/earner/dashboard">Credly</a>
+          </li>
         </ul>
       </nav>
     </header>

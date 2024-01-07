@@ -40,6 +40,11 @@
   border-radius: 100%;
 }
 
+.logo-img {
+  width: 150px;
+  height: 50px;
+}
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white;

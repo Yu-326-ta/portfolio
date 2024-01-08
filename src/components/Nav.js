@@ -1,6 +1,6 @@
 import React from "react";
 // iconのインポート
-import { BiBriefcase, BiClipboard, BiHomeAlt, BiUser } from "react-icons/bi";
+import { BiHomeAlt, BiUser } from "react-icons/bi";
 import { BsClipboardData, BsBriefcase, BsChatSquare } from "react-icons/bs";
 // link
 import { Link } from "react-scroll";
@@ -21,7 +21,7 @@ const Nav = () => {
             <BiHomeAlt />
           </Link>
           <Link
-            to="about"
+            to="experience"
             activeClass="active"
             smooth={true}
             spy={true}

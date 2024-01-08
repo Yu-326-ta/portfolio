@@ -1,6 +1,10 @@
-import { kyutech, fusic, moneyforward, dmm } from "../assets";
+// import { kyutech, fusic, moneyforward, dmm } from "../assets";
+import kyutech from "../assets/company/kyutech.jpg";
+import fusic from "../assets/company/fusic.jpg";
+import moneyforward from "../assets/company/moneyforward.png";
+import dmm from "../assets/company/dmm.jpg";
 
-export const experiences = [
+const experiences = [
   {
     title: "University",
     company_name: "Kyushu Institute of Technology",
@@ -32,7 +36,8 @@ export const experiences = [
     date: "December 2022 - August 2023",
     points: [
       "Learned Ruby and Rails for the first time.",
-      "Experienced in developing prepaid cards for businesses using Rails.",
+      "Created a financial planner booking website using rails.",
+      "Experience in developing video distribution sites using Go.",
     ],
   },
   {
@@ -43,8 +48,8 @@ export const experiences = [
     date: "October 2023 - Present",
     points: [
       "Learned about Go for the first time.",
-      "I built a server using graphql and gRPC for the first time in actual project.",
-      "Experienced in database operations using redis and cloudspanner, GCP.",
+      "I built a server using GraphQL and gRPC for the first time and learned database operations using redis and cloudspanner, GCP in actual project.",
+      "Experienced in developing .",
     ],
   },
 ];

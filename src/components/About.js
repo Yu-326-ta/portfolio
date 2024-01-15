@@ -64,7 +64,7 @@ const Experience = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
-        className="text-[55px] font-bold leading-[0.8] lg:text-[110px]"
+        className="text-[55px] font-bold leading-[0.8] lg:text-[110px] py-8"
       >
         <p className={`${styles.sectionSubText} text-center mb-4 text-accent`}>
           What I have done so far

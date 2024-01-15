@@ -21,15 +21,6 @@ const Nav = () => {
             <BiHomeAlt />
           </Link>
           <Link
-            to="experience"
-            activeClass="active"
-            smooth={true}
-            spy={true}
-            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
-          >
-            <BiUser />
-          </Link>
-          <Link
             to="skills"
             activeClass="active"
             smooth={true}
@@ -37,6 +28,15 @@ const Nav = () => {
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BsClipboardData />
+          </Link>
+          <Link
+            to="experience"
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+          >
+            <BiUser />
           </Link>
           <Link
             to="work"

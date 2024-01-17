@@ -28,7 +28,7 @@ const Skills = () => {
       id: 2,
       src: css,
       title: "CSS",
-      style: "shadow-stone-500",
+      style: "shadow-fuchsia-500",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ const Skills = () => {
       id: 4,
       src: ruby,
       title: "Ruby",
-      style: "shadow-stone-500",
+      style: "shadow-fuchsia-500",
     },
     {
       id: 5,
@@ -52,7 +52,7 @@ const Skills = () => {
       id: 6,
       src: php,
       title: "PHP",
-      style: "shadow-stone-500",
+      style: "shadow-fuchsia-500",
     },
     {
       id: 7,
@@ -64,7 +64,7 @@ const Skills = () => {
       id: 8,
       src: docker,
       title: "Docker",
-      style: "shadow-stone-500",
+      style: "shadow-fuchsia-500",
     },
     {
       id: 9,
@@ -76,7 +76,7 @@ const Skills = () => {
       id: 10,
       src: redis,
       title: "Redis",
-      style: "shadow-stone-500",
+      style: "shadow-fuchsia-500",
     },
     {
       id: 11,
@@ -88,7 +88,7 @@ const Skills = () => {
       id: 12,
       src: git,
       title: "Git",
-      style: "shadow-stone-500",
+      style: "shadow-fuchsia-500",
     },
   ];
 

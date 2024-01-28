@@ -8,10 +8,7 @@ import { fadeIn } from "../variants";
 
 const Contact = () => {
   return (
-    <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
-      id="contact"
-    >
+    <section className="section my-8 lg:my-24" id="contact">
       <div className="container mx-auto">
         {/* text */}
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">

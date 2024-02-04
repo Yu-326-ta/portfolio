@@ -89,16 +89,19 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="https://twitter.com/Yu326ta">
+              <a href="https://twitter.com/Yu326ta" aria-label="Twitter">
                 <FaXTwitter />
               </a>
-              <a href="https://github.com/Yu-326-ta">
+              <a href="https://github.com/Yu-326-ta" aria-label="GitHub">
                 <FaGithub />
               </a>
-              <a href="https://www.instagram.com/y.yut326/">
+              <a
+                href="https://www.instagram.com/y.yut326/"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
               </a>
-              <a href="https://zenn.dev/yu_326_ta">
+              <a href="https://zenn.dev/yu_326_ta" aria-label="Zenn">
                 <SiZenn />
               </a>
             </motion.div>

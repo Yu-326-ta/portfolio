@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9bd0764c.css",
+    "main.js": "/static/js/main.b62f6846.js",
+    "static/media/mysql.png": "/static/media/mysql.47a909932d875945c8b2.png",
+    "static/media/site-bg.jpg": "/static/media/site-bg.54724d703024833ef9c6.jpg",
+    "static/media/react.png": "/static/media/react.81ed438b18e24116794d.png",
+    "static/media/about.png": "/static/media/about.ec7aab0e12aa54088334.png",
+    "static/media/graphql.png": "/static/media/graphql.fc6b9451733c620ceb86.png",
+    "static/media/ec.jpg": "/static/media/ec.171b01cbf94c57770546.jpg",
+    "static/media/fp.jpg": "/static/media/fp.a0b7d80afbeb178dd1f8.jpg",
+    "static/media/ruby.png": "/static/media/ruby.a7397f5762877452df57.png",
+    "static/media/logo.png": "/static/media/logo.d8af7b1977a1f7c4b202.png",
+    "static/media/todo.jpg": "/static/media/todo.0105d7a07c989658d9fd.jpg",
+    "static/media/dmm.jpg": "/static/media/dmm.24947e2448eacbd891fe.jpg",
+    "static/media/aws.png": "/static/media/aws.0dead03078b1419d10e6.png",
+    "static/media/redis.png": "/static/media/redis.4c5ab7d2a8bb220117fd.png",
+    "static/media/japan.png": "/static/media/japan.f342a7880afe9fd715ff.png",
+    "static/media/fusic.jpg": "/static/media/fusic.4d942b77393d167ee88b.jpg",
+    "static/media/php.png": "/static/media/php.679d98d46fd878cffe97.png",
+    "static/media/css.png": "/static/media/css.5491a3b05b4addb59c15.png",
+    "static/media/html.png": "/static/media/html.397540dec969b31fd37c.png",
+    "static/media/docker.webp": "/static/media/docker.9b1202695a26d7f63c9f.webp",
+    "static/media/golang.svg": "/static/media/golang.81a165ecbbe2b0165632d1beb08af79c.svg",
+    "index.html": "/index.html",
+    "main.9bd0764c.css.map": "/static/css/main.9bd0764c.css.map",
+    "main.b62f6846.js.map": "/static/js/main.b62f6846.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bd0764c.css",
+    "static/js/main.b62f6846.js"
+  ]
+}

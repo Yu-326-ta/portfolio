@@ -93,7 +93,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="section my-8 lg:my-24" id="skills">
+    <section className="section" id="skills">
       <motion.div
         variants={fadeIn("up", 0.3)}
         initial="hidden"

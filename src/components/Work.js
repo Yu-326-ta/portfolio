@@ -10,7 +10,7 @@ import Img3 from "../assets/todo.jpg";
 
 const Work = () => {
   return (
-    <section className="section my-32 lg:my-24" id="work">
+    <section className="section my-24" id="work">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
           <motion.div

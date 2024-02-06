@@ -27,7 +27,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[55px] font-bold leading-[0.8] lg:text-[110px]"
+              className="text-[55px] font-bold leading-[0.8] lg:text-[110px] pt-20"
             >
               YUTA <span>YOSHINAGA</span>
             </motion.h1>

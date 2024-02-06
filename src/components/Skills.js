@@ -93,7 +93,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="section my-48 lg:my-24" id="skills">
+    <section className="section my-64 lg:my-24" id="skills">
       <div name="skill" className="w-full h-screen">
         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
           <div>

@@ -32,7 +32,7 @@ const Banner = () => {
               YUTA <span>YOSHINAGA</span>
             </motion.h1>
             <motion.div
-              variants={fadeIn("up", 0.4)}
+              variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -54,26 +54,14 @@ const Banner = () => {
                 repeat={Infinity}
               />
             </motion.div>
-            <motion.p
-              variants={fadeIn("up", 0.5)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0"
-            >
+            <p className="mb-8 max-w-lg mx-auto lg:mx-0">
               Hi! I'm Yuta Yoshinaga. I am a student at a university in Kyushu
               of Japan and next year I will start working for an IT company as a
               software engineer! I specialize in backend and have experience in
               GO, PHP and RUBY development in several companies. Currently
               learning about infrastructure, including AWS!
-            </motion.p>
-            <motion.div
-              variants={fadeIn("up", 0.6)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
-            >
+            </p>
+            <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
               <button className="btn btn-lg">Contact me</button>
               <a
                 href="#"
@@ -81,14 +69,8 @@ const Banner = () => {
               >
                 My Portfolio
               </a>
-            </motion.div>
-            <motion.div
-              variants={fadeIn("up", 0.7)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
-            >
+            </div>
+            <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
               <a href="https://twitter.com/Yu326ta" aria-label="Twitter">
                 <FaXTwitter />
               </a>
@@ -104,18 +86,12 @@ const Banner = () => {
               <a href="https://zenn.dev/yu_326_ta" aria-label="Zenn">
                 <SiZenn />
               </a>
-            </motion.div>
+            </div>
           </div>
           {/* image */}
-          <motion.div
-            variants={fadeIn("up", 0.8)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
-          >
+          <div className="lg:flex flex-1 max-w-[320px] lg:max-w-[482px]">
             <img src={Image} alt="" />
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

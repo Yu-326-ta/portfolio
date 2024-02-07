@@ -41,7 +41,7 @@ const Work = () => {
               <img
                 className="group-hover:scale-125 transition-all duration-500"
                 src={Img1}
-                alt=""
+                alt="Financial Planner Booking Site"
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
@@ -70,7 +70,7 @@ const Work = () => {
               <img
                 className="group-hover:scale-125 transition-all duration-500"
                 src={Img2}
-                alt=""
+                alt="EC site"
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
@@ -89,7 +89,7 @@ const Work = () => {
               <img
                 className="group-hover:scale-125 transition-all duration-500"
                 src={Img3}
-                alt=""
+                alt="Todo App"
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">

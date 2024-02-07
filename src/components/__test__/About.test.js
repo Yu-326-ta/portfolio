@@ -4,10 +4,10 @@ import { toBeInTheDocument } from "@testing-library/jest-dom";
 import "intersection-observer";
 import About from "../About";
 
-test("renders Banner component", () => {
+test("renders About component", () => {
   render(<About />);
 
-  // Check if the text "I am a" is present
+  // Check if the text "What I have done so far" is present
   const subheading = screen.getAllByText(/What I have done so far/i);
   expect(subheading.length).toBeGreaterThan(0);
 

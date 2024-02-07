@@ -4,14 +4,14 @@ import { toBeInTheDocument } from "@testing-library/jest-dom";
 import "intersection-observer";
 import Skills from "../Skills";
 
-test("renders Banner component", () => {
+test("renders Skills component", () => {
   render(<Skills />);
 
   // Check if the main heading is rendered
   const mainHeading = screen.getByText("Skills");
   expect(mainHeading).toBeInTheDocument();
 
-  // Check if the text "I am a" is present
+  // Check if the text "These are the technologies I've worked with" is present
   const subheading = screen.getAllByText(
     /These are the technologies I've worked with/i
   );

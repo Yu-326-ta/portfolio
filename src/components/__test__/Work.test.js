@@ -4,20 +4,20 @@ import { toBeInTheDocument } from "@testing-library/jest-dom";
 import "intersection-observer";
 import Work from "../Work";
 
-test("renders Banner component", () => {
+test("renders Work component", () => {
   render(<Work />);
 
   // Check if the main heading is rendered
   const mainHeading = screen.getByText("My Latest Work.");
   expect(mainHeading).toBeInTheDocument();
 
-  // Check if the text "I am a" is present
+  // Check if the text "Here is a list of products I have recently created. Technologies used are Go, Ruby, and PHP. I also have experience in creating various other products." is present
   const subheading = screen.getAllByText(
     /Here is a list of products I have recently created. Technologies used are Go, Ruby, and PHP. I also have experience in creating various other products./i
   );
   expect(subheading.length).toBeGreaterThan(0);
 
-  // Check if the "Contact me" button is present
+  // Check if the "View all projects" button is present
   const contactButton = screen.getByRole("button", {
     name: /View all projects/i,
   });

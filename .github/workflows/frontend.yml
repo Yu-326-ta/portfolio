@@ -22,4 +22,12 @@ jobs:
         run: npm install
 
       - name: Test
-        run: npm test
+        run: npm test -- --coverage
+
+      - name: Upload jest test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: jest-results-1.20
+          path: ./coverage/lcov-report/index.html
+          retention-days: 5

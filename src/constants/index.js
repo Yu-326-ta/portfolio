@@ -36,8 +36,8 @@ const experiences = [
     date: "December 2022 - August 2023",
     points: [
       "Learned Ruby and Rails for the first time.",
-      "Created a financial planner booking website using rails.",
-      "Experience in developing video distribution sites using Go.",
+      "Created a financial planner booking website using Rails.",
+      "Experience in developing  management screens for payment services using Rails.",
     ],
   },
   {
@@ -49,7 +49,7 @@ const experiences = [
     points: [
       "Learned about Go for the first time.",
       "I built a server using GraphQL and gRPC for the first time and learned database operations using redis and cloudspanner, GCP in actual project.",
-      "Experienced in developing .",
+      "Experience in developing video distribution sites using Go.",
     ],
   },
 ];

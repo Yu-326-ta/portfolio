@@ -40,12 +40,7 @@ const Banner = () => {
             >
               <span className="text-white mr-4">I am a</span>
               <TypeAnimation
-                sequence={[
-                  "Software Engineer",
-                  2000,
-                  "Web Developer",
-                  2000,
-                ]}
+                sequence={["Software Engineer", 2000, "Web Developer", 2000]}
                 speed={50}
                 className="text-accent"
                 wrapper="span"
@@ -53,11 +48,12 @@ const Banner = () => {
               />
             </motion.div>
             <p className="mb-8 max-w-lg mx-auto lg:mx-0">
-              Hi! I'm Yuta Yoshinaga. I am a student at a university in Kyushu
-              of Japan and next year I will start working for an IT company as a
-              software engineer! I specialize in backend and have experience in
-              GO, PHP and RUBY development in several companies. Currently
-              learning about infrastructure, including AWS!
+              Hi! I'm Yuta Yoshinaga. I am working as a software engineer at an
+              IT company. I specialize in backend development and have
+              experience with various technologies. I am particularly interested
+              in developing new business projects and creating innovative
+              solutions. Currently focusing on building scalable and efficient
+              backend systems!
             </p>
             <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
               <button className="btn btn-lg">Contact me</button>

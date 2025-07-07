@@ -20,7 +20,7 @@ const Contact = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[36px] lg:text-[60x] font-secondary font-semibold uppercase leading-[1] text-accent"
             >
-              Get in touch
+              お気軽にお問い合わせください
             </motion.div>
             <motion.h2
               variants={fadeIn("up", 0.3)}
@@ -38,8 +38,7 @@ const Contact = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              If you would like to contact me, please send an e-mail to the
-              following e-mail address
+              お問い合わせをご希望の方は、以下のメールアドレスまでご連絡ください。
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}

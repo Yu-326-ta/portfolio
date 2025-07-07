@@ -67,7 +67,7 @@ const Experience = () => {
         className="text-[55px] font-bold leading-[0.8] lg:text-[110px] pt-24"
       >
         <p className={`${styles.sectionSubText} text-center mb-4 text-accent`}>
-          What I have done so far
+          これまでの経歴
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Work Experience.

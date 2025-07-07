@@ -113,7 +113,7 @@ const Skills = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="py-6 text-accent"
             >
-              These are the technologies I've worked with
+              これまでに使用した技術です
             </motion.p>
           </div>
           <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">

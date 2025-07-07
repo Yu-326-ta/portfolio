@@ -6,14 +6,14 @@ import dmm from "../assets/company/dmm.jpg";
 
 const experiences = [
   {
-    title: "University",
+    title: "大学",
     company_name: "Kyushu Institute of Technology",
     icon: kyutech,
     iconBg: "#383E56",
-    date: "March 2020 - April 2024",
+    date: "2020年3月 - 2024年4月",
     points: [
-      "I became interested in programming in a university class and started teaching himself.",
-      "I worked as an intern at several companies.",
+      "大学の授業でプログラミングに興味を持ち、独学で学習を始めました。",
+      "複数の企業でインターンシップとして働きました。",
     ],
   },
   {
@@ -21,11 +21,11 @@ const experiences = [
     company_name: "Fusic",
     icon: fusic,
     iconBg: "#E6DEDD",
-    date: "June 2022 - September 20",
+    date: "2022年6月 - 2022年9月",
     points: [
-      "I was assigned to an actual project for the first time in my life.",
-      "I gained experience in everything from requirements definition and screen design to development.",
-      "I also have experience with Laravel, PHP framework.",
+      "人生で初めて実際のプロジェクトに参画しました。",
+      "要件定義から画面設計、開発まで一通りの経験を積みました。",
+      "PHPフレームワークのLaravelを使用した経験もあります。",
     ],
   },
   {
@@ -33,11 +33,11 @@ const experiences = [
     company_name: "Money Forward",
     icon: moneyforward,
     iconBg: "#383E56",
-    date: "December 2022 - August 2023",
+    date: "2022年12月 - 2023年8月",
     points: [
-      "Learned Ruby and Rails for the first time.",
-      "Created a financial planner booking website using Rails.",
-      "Experience in developing  management screens for payment services using Rails.",
+      "初めてRubyとRailsを学習しました。",
+      "Railsを使用してファイナンシャルプランナー予約サイトを作成しました。",
+      "Railsを使用した決済サービスの管理画面開発経験があります。",
     ],
   },
   {
@@ -45,11 +45,11 @@ const experiences = [
     company_name: "DMM.com",
     icon: dmm,
     iconBg: "#E6DEDD",
-    date: "October 2023 - Present",
+    date: "2023年10月 - 現在",
     points: [
-      "Learned about Go for the first time.",
-      "I built a server using GraphQL and gRPC for the first time and learned database operations using redis and cloudspanner, GCP in actual project.",
-      "Experience in developing video distribution sites using Go.",
+      "初めてGoについて学習しました。",
+      "GraphQLやgRPCを使用したサーバーを初めて構築し、実際のプロジェクトでredisやcloudspanner、GCPを使用したデータベース操作を学びました。",
+      "Goを使用した動画配信サイトの開発経験があります。",
     ],
   },
 ];

@@ -38,9 +38,9 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[36px] lg:text-[60x] font-secondary font-semibold uppercase leading-[1]"
             >
-              <span className="text-white mr-4">I am a</span>
+              <span className="text-white mr-4">私は</span>
               <TypeAnimation
-                sequence={["Software Engineer", 2000, "Web Developer", 2000]}
+                sequence={["ソフトウェアエンジニア", 2000, "ウェブ開発者", 2000]}
                 speed={50}
                 className="text-accent"
                 wrapper="span"
@@ -48,20 +48,15 @@ const Banner = () => {
               />
             </motion.div>
             <p className="mb-8 max-w-lg mx-auto lg:mx-0">
-              Hi! I'm Yuta Yoshinaga. I am working as a software engineer at an
-              IT company. I specialize in backend development and have
-              experience with various technologies. I am particularly interested
-              in developing new business projects and creating innovative
-              solutions. Currently focusing on building scalable and efficient
-              backend systems!
+              こんにちは！吉永雄太です。IT企業でソフトウェアエンジニアとして働いています。バックエンド開発を専門とし、様々な技術での経験があります。特に新規事業プロジェクトの開発や革新的なソリューションの創造に興味があります。現在はスケーラブルで効率的なバックエンドシステムの構築に注力しています！
             </p>
             <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
-              <button className="btn btn-lg">Contact me</button>
+              <button className="btn btn-lg">お問い合わせ</button>
               <a
                 href="#"
                 className="btn-link text-accent font-secondary font-semibold"
               >
-                My Portfolio
+                ポートフォリオを見る
               </a>
             </div>
             <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">

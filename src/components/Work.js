@@ -27,11 +27,9 @@ const Work = () => {
                 Work.
               </h2>
               <p className="max-w-sm mb-16">
-                Here is a list of products I have recently created. Technologies
-                used are Go, Ruby, and PHP. I also have experience in creating
-                various other products.
+                最近作成したプロダクトの一覧です。使用技術はGo、Ruby、PHPです。その他にも様々なプロダクトの作成経験があります。
               </p>
-              <button className="btn btn-sm">View all projects</button>
+              <button className="btn btn-sm">全てのプロジェクトを見る</button>
             </div>
             {/* image1つ目 */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
@@ -45,12 +43,12 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-white">Developed in Ruby</span>
+                <span className="text-white">Rubyで開発</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                 <span className="text-2xl text-white">
-                  Financial Planner Booking Site
+                  ファイナンシャルプランナー予約サイト
                 </span>
               </div>
             </div>
@@ -74,11 +72,11 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-white">Developed in PHP</span>
+                <span className="text-white">PHPで開発</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-2xl text-white">EC site</span>
+                <span className="text-2xl text-white">ECサイト</span>
               </div>
             </div>
             {/* image2つ目 */}
@@ -93,11 +91,11 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-white">Developed in GO</span>
+                <span className="text-white">Goで開発</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-2xl text-white">Todo App</span>
+                <span className="text-2xl text-white">Todoアプリ</span>
               </div>
             </div>
           </motion.div>

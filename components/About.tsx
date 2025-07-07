@@ -1,0 +1,102 @@
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/variants";
+import "react-vertical-timeline-component/style.min.css";
+import { styles } from "@/lib/styles";
+import { experiences } from "@/lib/constants";
+
+interface Experience {
+  title: string;
+  company_name: string;
+  icon: string;
+  iconBg: string;
+  date: string;
+  points: string[];
+}
+
+const ExperienceCard = ({ experience }: { experience: Experience }) => {
+  return (
+    <VerticalTimelineElement
+      contentStyle={{
+        background: "#1d1836",
+        color: "#fff",
+      }}
+      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      date={experience.date}
+      iconStyle={{ background: experience.iconBg }}
+      icon={
+        <div className="flex justify-center items-center w-full h-full">
+          <Image
+            src={experience.icon}
+            alt={experience.company_name}
+            width={60}
+            height={60}
+            className="w-[60%] h-[60%] object-contain"
+          />
+        </div>
+      }
+    >
+      <div>
+        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <p
+          className="text-secondary text-[16px] font-semibold"
+          style={{ margin: 0 }}
+        >
+          {experience.company_name}
+        </p>
+      </div>
+
+      <ul className="mt-5 list-disc ml-5 space-y-2">
+        {experience.points.map((point, index) => (
+          <li
+            key={`experience-point-${index}`}
+            className="text-white-100 text-[14px] pl-1 tracking-wider"
+          >
+            {point}
+          </li>
+        ))}
+      </ul>
+    </VerticalTimelineElement>
+  );
+};
+
+const Experience = () => {
+  return (
+    <div id="experience">
+      <motion.div
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="text-[55px] font-bold leading-[0.8] lg:text-[110px] pt-24"
+      >
+        <p className={`${styles.sectionSubText} text-center mb-4 text-accent`}>
+          What I have done so far
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Work Experience.
+        </h2>
+      </motion.div>
+
+      <div className="mt-20 flex flex-col">
+        <VerticalTimeline>
+          {experiences.map((experience, index) => (
+            <ExperienceCard
+              key={`experience-${index}`}
+              experience={experience}
+            />
+          ))}
+        </VerticalTimeline>
+      </div>
+    </div>
+  );
+};
+
+export default Experience;

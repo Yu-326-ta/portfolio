@@ -46,4 +46,15 @@ export const experiences = [
       "Experience in developing video distribution sites using Go.",
     ],
   },
+  {
+    title: "Python Developer",
+    company_name: "Nook",
+    icon: "/assets/company/nook.png",
+    iconBg: "#4B4B4B",
+    date: "March 2025 - Present",
+    points: [
+      "Developing backend services for a secondary-distribution clothing platform using Python.",
+      "Building and maintaining infrastructure pipelines on AWS and GCP.",
+    ],
+  },
 ];

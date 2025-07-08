@@ -1,14 +1,8 @@
-// import { kyutech, fusic, moneyforward, dmm } from "../assets";
-import kyutech from "../assets/company/kyutech.jpg";
-import fusic from "../assets/company/fusic.jpg";
-import moneyforward from "../assets/company/moneyforward.png";
-import dmm from "../assets/company/dmm.jpg";
-
-const experiences = [
+export const experiences = [
   {
     title: "University",
     company_name: "Kyushu Institute of Technology",
-    icon: kyutech,
+    icon: "/assets/company/kyutech.jpg",
     iconBg: "#383E56",
     date: "March 2020 - April 2024",
     points: [
@@ -19,7 +13,7 @@ const experiences = [
   {
     title: "PHP Developer",
     company_name: "Fusic",
-    icon: fusic,
+    icon: "/assets/company/fusic.jpg",
     iconBg: "#E6DEDD",
     date: "June 2022 - September 20",
     points: [
@@ -31,7 +25,7 @@ const experiences = [
   {
     title: "Ruby Developer",
     company_name: "Money Forward",
-    icon: moneyforward,
+    icon: "/assets/company/moneyforward.png",
     iconBg: "#383E56",
     date: "December 2022 - August 2023",
     points: [
@@ -43,7 +37,7 @@ const experiences = [
   {
     title: "Go Developer",
     company_name: "DMM.com",
-    icon: dmm,
+    icon: "/assets/company/dmm.jpg",
     iconBg: "#E6DEDD",
     date: "October 2023 - Present",
     points: [
@@ -53,5 +47,3 @@ const experiences = [
     ],
   },
 ];
-
-export { experiences };

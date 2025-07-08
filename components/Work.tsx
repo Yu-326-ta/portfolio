@@ -1,12 +1,10 @@
+"use client";
+
 import React from "react";
-
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
-
-// img
-import Img1 from "../assets/fp.jpg";
-import Img2 from "../assets/ec.jpg";
-import Img3 from "../assets/todo.jpg";
+import { fadeIn } from "@/lib/variants";
+import { Button } from "@/components/ui/button";
 
 const Work = () => {
   return (
@@ -31,17 +29,20 @@ const Work = () => {
                 used are Go, Ruby, and PHP. I also have experience in creating
                 various other products.
               </p>
-              <button className="btn btn-sm">View all projects</button>
+              <Button variant="gradient" className="btn-sm">View all projects</Button>
             </div>
             {/* image1つ目 */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
-              <img
+              <Image
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
+                src="/assets/fp.jpg"
                 alt="Financial Planner Booking Site"
+                width={600}
+                height={400}
+                style={{ width: '100%', height: 'auto' }}
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
@@ -67,10 +68,13 @@ const Work = () => {
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
-              <img
+              <Image
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img2}
+                src="/assets/ec.jpg"
                 alt="EC site"
+                width={600}
+                height={400}
+                style={{ width: '100%', height: 'auto' }}
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
@@ -86,10 +90,13 @@ const Work = () => {
               {/* overlay */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/* img */}
-              <img
+              <Image
                 className="group-hover:scale-125 transition-all duration-500"
-                src={Img3}
+                src="/assets/todo.jpg"
                 alt="Todo App"
+                width={600}
+                height={400}
+                style={{ width: '100%', height: 'auto' }}
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">

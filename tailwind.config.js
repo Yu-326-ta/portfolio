@@ -1,10 +1,15 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     fontFamily: {
-      primary: "Orbitron",
-      secondary: "Rajdhani",
-      tertiary: "Aldrich",
+      primary: ["var(--font-orbitron)", "sans-serif"],
+      secondary: ["var(--font-rajdhani)", "sans-serif"],
+      tertiary: ["var(--font-aldrich)", "sans-serif"],
     },
     container: {
       padding: {
@@ -23,11 +28,12 @@ module.exports = {
         accent: "#B809C3",
       },
       backgroundImage: {
-        site: "url('./assets/site-bg.jpg')",
-        about: "url('./assets/about.png')",
-        services: "url('./assets/services.png')",
+        site: "url('/assets/site-bg.jpg')",
+        about: "url('/assets/about.png')",
+        services: "url('/assets/services.png')",
       },
     },
   },
   plugins: [],
-};
+}
+

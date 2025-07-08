@@ -1,16 +1,15 @@
+"use client";
+
 import React from "react";
-// images
-import Image from "../assets/about.png";
-// icons
+import Image from "next/image";
+import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { SiZenn } from "react-icons/si";
-// type animation
 import { TypeAnimation } from "react-type-animation";
-// motion
 import { motion } from "framer-motion";
-// variants
-import { fadeIn } from "../variants";
+import { fadeIn } from "@/lib/variants";
+import { Button } from "@/components/ui/button";
 
 const Banner = () => {
   return (
@@ -48,7 +47,7 @@ const Banner = () => {
               />
             </motion.div>
             <p className="mb-8 max-w-lg mx-auto lg:mx-0">
-              Hi! I'm Yuta Yoshinaga. I am working as a software engineer at an
+              Hi! I&apos;m Yuta Yoshinaga. I am working as a software engineer at an
               IT company. I specialize in backend development and have
               experience with various technologies. I am particularly interested
               in developing new business projects and creating innovative
@@ -56,35 +55,41 @@ const Banner = () => {
               backend systems!
             </p>
             <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
-              <button className="btn btn-lg">Contact me</button>
-              <a
+              <Button variant="gradient" className="btn-lg">Contact me</Button>
+              <Link
                 href="#"
                 className="btn-link text-accent font-secondary font-semibold"
               >
                 My Portfolio
-              </a>
+              </Link>
             </div>
             <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
-              <a href="https://twitter.com/Yu326ta" aria-label="Twitter">
+              <Link href="https://twitter.com/Yu326ta" aria-label="Twitter">
                 <FaXTwitter />
-              </a>
-              <a href="https://github.com/Yu-326-ta" aria-label="GitHub">
+              </Link>
+              <Link href="https://github.com/Yu-326-ta" aria-label="GitHub">
                 <FaGithub />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.instagram.com/y.yut326/"
                 aria-label="Instagram"
               >
                 <FaInstagram />
-              </a>
-              <a href="https://zenn.dev/yu_326_ta" aria-label="Zenn">
+              </Link>
+              <Link href="https://zenn.dev/yu_326_ta" aria-label="Zenn">
                 <SiZenn />
-              </a>
+              </Link>
             </div>
           </div>
           {/* image */}
           <div className="lg:flex flex-1 max-w-[320px] lg:max-w-[482px]">
-            <img src={Image} alt="" />
+            <Image 
+              src="/assets/about.png" 
+              alt="Profile" 
+              width={482} 
+              height={600} 
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </div>

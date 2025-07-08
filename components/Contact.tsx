@@ -1,10 +1,10 @@
+"use client";
+
 import React from "react";
-// images
-import Japan from "../assets/japan.png";
-// motion
+import Image from "next/image";
 import { motion } from "framer-motion";
-// variants
-import { fadeIn } from "../variants";
+import { fadeIn } from "@/lib/variants";
+import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
@@ -48,7 +48,7 @@ const Contact = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">yoshi.yuta326@gmail.com</button>
+              <Button variant="gradient" className="btn-lg">yoshi.yuta326@gmail.com</Button>
             </motion.div>
           </div>
           {/* image */}
@@ -59,7 +59,13 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="lg:flex flex-1 max-w-[400px] lg:max-w-[800px]"
           >
-            <img src={Japan} alt="" />
+            <Image 
+              src="/assets/japan.png" 
+              alt="Japan" 
+              width={800} 
+              height={600} 
+              className="w-full h-auto"
+            />
           </motion.div>
         </div>
       </div>

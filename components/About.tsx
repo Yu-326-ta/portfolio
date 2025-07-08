@@ -1,18 +1,27 @@
+"use client";
+
 import React from "react";
+import Image from "next/image";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-// variants
-import { fadeIn } from "../variants";
-
+import { fadeIn } from "@/lib/variants";
 import "react-vertical-timeline-component/style.min.css";
+import { styles } from "@/lib/styles";
+import { experiences } from "@/lib/constants";
 
-import { styles } from "../styles";
-import { experiences } from "../constants";
+interface Experience {
+  title: string;
+  company_name: string;
+  icon: string;
+  iconBg: string;
+  date: string;
+  points: string[];
+}
 
-const ExperienceCard = ({ experience }) => {
+const ExperienceCard = ({ experience }: { experience: Experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -24,9 +33,11 @@ const ExperienceCard = ({ experience }) => {
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
-          <img
+          <Image
             src={experience.icon}
             alt={experience.company_name}
+            width={60}
+            height={60}
             className="w-[60%] h-[60%] object-contain"
           />
         </div>

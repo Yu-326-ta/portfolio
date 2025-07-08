@@ -1,18 +1,15 @@
 # Portfolio - Next.js
 
-[![portfolio](https://github.com/Yu-326-ta/portfolio/actions/workflows/frontend.yml/badge.svg)](https://github.com/Yu-326-ta/portfolio/actions/workflows/frontend.yml)
-[![deploy](https://github.com/Yu-326-ta/portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/Yu-326-ta/portfolio/actions/workflows/deploy.yml)
-
 ## 概要
 
-ReactからNext.js 14への移行プロジェクトです。UIとアニメーションを維持しながら、最新のNext.jsとshadcn/uiを使用して再構築しました。
+React から Next.js 14 への移行プロジェクトです。UI とアニメーションを維持しながら、最新の Next.js と shadcn/ui を使用して再構築しました。
 
 ## 技術スタック
 
-- **Next.js 14** - App Router使用
+- **Next.js 14** - App Router 使用
 - **TypeScript** - 型安全な開発
 - **Tailwind CSS** - スタイリング
-- **shadcn/ui** - UIコンポーネント
+- **shadcn/ui** - UI コンポーネント
 - **Framer Motion** - アニメーション
 - **Vercel Analytics** - 分析
 

@@ -50,24 +50,17 @@
 }
 
 .btn {
-  background: linear-gradient(
-    92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
-    #3bace2 100%,
-    #406aff 117.04%
-  );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  background: rgba(184, 9, 195, 0.3);
+  border: 1px solid rgba(184, 9, 195, 0.5);
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 4px 30px rgba(184, 9, 195, 0.3);
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: linear-gradient(
-    92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
-  );
+  background: rgba(184, 9, 195, 0.5);
+  border-color: rgba(184, 9, 195, 0.7);
+  box-shadow: 0px 4px 40px rgba(184, 9, 195, 0.5);
 }
 
 .gradient,

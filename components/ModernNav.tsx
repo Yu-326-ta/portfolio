@@ -48,11 +48,11 @@ const ModernNav = () => {
       >
         <motion.nav
           className={`
-            px-12 py-6 rounded-full backdrop-blur-lg border transition-all duration-300
+            px-12 py-6 rounded-full backdrop-blur-md border transition-all duration-300
             ${
               scrollY > 50
-                ? "bg-black/95 border-gray-600/50 shadow-xl"
-                : "bg-black/80 border-gray-500/30 shadow-lg"
+                ? "bg-white/10 border-white/20 shadow-xl"
+                : "bg-white/5 border-white/10 shadow-lg"
             }
           `}
           whileHover={{ scale: 1.01 }}
@@ -143,7 +143,7 @@ const ModernNav = () => {
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={toggleLanguage}
-          className="p-2 px-3 rounded-full bg-black/80 border border-accent/50 backdrop-blur-md shadow-lg text-accent text-sm font-bold hover:bg-black/90 transition-colors duration-300"
+          className="p-2 px-3 rounded-full bg-white/10 border border-white/20 backdrop-blur-md shadow-lg text-accent text-sm font-bold hover:bg-white/20 transition-colors duration-300"
         >
           {language === "en" ? "日" : "EN"}
         </motion.button>
@@ -151,7 +151,7 @@ const ModernNav = () => {
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="p-3 rounded-full bg-black/80 border border-black/30 backdrop-blur-md shadow-lg text-white hover:bg-black/90 transition-colors duration-300"
+          className="p-3 rounded-full bg-white/10 border border-white/20 backdrop-blur-md shadow-lg text-white hover:bg-white/20 transition-colors duration-300"
         >
           {isMobileMenuOpen ? <HiX size={20} /> : <HiMenuAlt3 size={20} />}
         </motion.button>
@@ -179,7 +179,7 @@ const ModernNav = () => {
               transition={{ duration: 0.3, ease: "easeOut" }}
               className="md:hidden fixed top-20 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-xs px-4"
             >
-              <div className="bg-black/95 backdrop-blur-lg border border-gray-600/50 rounded-2xl shadow-2xl overflow-hidden">
+              <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl shadow-2xl overflow-hidden">
                 <div className="py-2">
                   {navItems.map((item, index) => {
                     const Icon = item.icon;

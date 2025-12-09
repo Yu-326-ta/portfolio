@@ -8,7 +8,7 @@ import { styles } from "@/lib/styles";
 import { useLanguage } from "@/lib/LanguageContext";
 
 const Skills = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const techs = [
     {
@@ -143,10 +143,16 @@ const Skills = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="text-[55px] font-bold leading-[0.8] lg:text-[110px] pt-24 text-center mb-32"
+          className={`font-bold leading-[0.8] pt-24 text-center mb-32 ${
+            language === "ja"
+              ? "text-[40px] lg:text-[80px]"
+              : "text-[55px] lg:text-[110px]"
+          }`}
         >
           <p
-            className={`${styles.sectionSubText} text-center mb-4 text-accent`}
+            className={`${styles.sectionSubText} text-center ${
+              language === "ja" ? "mb-8 lg:mb-12" : "mb-4"
+            } text-accent`}
           >
             {t("skills.subtitle")}
           </p>

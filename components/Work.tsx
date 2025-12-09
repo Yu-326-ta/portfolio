@@ -125,10 +125,16 @@ const Work = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="text-[55px] font-bold leading-[0.8] lg:text-[110px] text-center mb-20"
+          className={`font-bold leading-[0.8] text-center mb-20 ${
+            language === "ja"
+              ? "text-[40px] lg:text-[80px]"
+              : "text-[55px] lg:text-[110px]"
+          }`}
         >
           <p
-            className={`${styles.sectionSubText} text-center mb-4 text-accent ${language === "ja" ? "font-japanese" : ""}`}
+            className={`${styles.sectionSubText} text-center ${
+              language === "ja" ? "mb-8 lg:mb-12 font-japanese" : "mb-4"
+            } text-accent`}
           >
             {t("work.subtitle")}
           </p>

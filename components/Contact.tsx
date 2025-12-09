@@ -21,7 +21,9 @@ const Contact = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className={`mb-6 text-[36px] lg:text-[60x] font-secondary font-semibold uppercase leading-[1] text-accent ${language === "ja" ? "font-japanese" : ""}`}
+              className={`${
+                language === "ja" ? "mb-10 lg:mb-14" : "mb-6"
+              } text-[36px] lg:text-[60x] font-secondary font-semibold uppercase leading-[1] text-accent ${language === "ja" ? "font-japanese" : ""}`}
             >
               {t("contact.subtitle")}
             </motion.div>
@@ -30,7 +32,11 @@ const Contact = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[55px] font-bold leading-[0.8] lg:text-[110px] mb-4"
+              className={`font-bold leading-[0.8] mb-4 ${
+                language === "ja"
+                  ? "text-[40px] lg:text-[80px]"
+                  : "text-[55px] lg:text-[110px]"
+              }`}
             >
               {t("contact.title")}
             </motion.h2>

@@ -223,13 +223,8 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     const savedLanguage = localStorage.getItem("language") as Language;
     if (savedLanguage && (savedLanguage === "en" || savedLanguage === "ja")) {
       setLanguageState(savedLanguage);
-    } else {
-      // ブラウザの言語設定をチェック
-      const browserLang = navigator.language.toLowerCase();
-      if (browserLang.startsWith("ja")) {
-        setLanguageState("ja");
-      }
     }
+    // デフォルトは英語（"en"）のまま
   }, []);
 
   const setLanguage = (lang: Language) => {

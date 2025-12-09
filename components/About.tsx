@@ -121,9 +121,15 @@ const Experience = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
-        className="text-[55px] font-bold leading-[0.8] lg:text-[110px] pt-24"
+        className={`font-bold leading-[0.8] pt-24 ${
+          language === "ja"
+            ? "text-[40px] lg:text-[80px]"
+            : "text-[55px] lg:text-[110px]"
+        }`}
       >
-        <p className={`${styles.sectionSubText} text-center mb-4 text-accent ${language === "ja" ? "font-japanese" : ""}`}>
+        <p className={`${styles.sectionSubText} text-center ${
+          language === "ja" ? "mb-8 lg:mb-12 font-japanese" : "mb-4"
+        } text-accent`}>
           {t("experience.subtitle")}
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>

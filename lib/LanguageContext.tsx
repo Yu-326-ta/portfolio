@@ -104,19 +104,28 @@ const translations: Record<Language, Record<string, string>> = {
     "exp.dmm.title": "Go Developer",
     "exp.dmm.company": "DMM.com",
     "exp.dmm.date": "October 2023 - Present",
-    "exp.dmm.point1": "Learned about Go for the first time.",
+    "exp.dmm.point1":
+      "Experience in developing video distribution sites using Go.",
     "exp.dmm.point2":
       "I built a server using GraphQL and gRPC for the first time and learned database operations using redis and cloudspanner, GCP in actual project.",
-    "exp.dmm.point3":
-      "Experience in developing video distribution sites using Go.",
+    "exp.dmm.point3": "Have experience leading projects",
 
     "exp.nook.title": "Python Developer",
     "exp.nook.company": "Nook",
-    "exp.nook.date": "March 2025 - Present",
-    "exp.nook.point1":
-      "Developing backend services for a secondary-distribution clothing platform using Python.",
+    "exp.nook.date": "March 2025 - November 2025",
+    "exp.nook.point1": "Participated as a side job",
     "exp.nook.point2":
+      "Developing backend services for a secondary-distribution clothing platform using Python.",
+    "exp.nook.point3":
       "Building and maintaining infrastructure pipelines on AWS and GCP.",
+
+    "exp.newr.title": "CTO",
+    "exp.newr.company": "Newr LLC",
+    "exp.newr.date": "December 2025 - Present",
+    "exp.newr.point1": "Founded Newr LLC",
+    "exp.newr.point2": "Leading technology strategy and development as CTO",
+    "exp.newr.point3":
+      "Handling all development from in-house product implementation to contract development",
   },
   ja: {
     // Navigation
@@ -176,42 +185,46 @@ const translations: Record<Language, Record<string, string>> = {
     "exp.kyutech.title": "大学",
     "exp.kyutech.company": "九州工業大学",
     "exp.kyutech.date": "2020年3月 - 2024年4月",
-    "exp.kyutech.point1":
-      "大学の授業でプログラミングに興味を持ち、独学を始めました。",
-    "exp.kyutech.point2": "複数の企業でインターンとして働きました。",
+    "exp.kyutech.point1": "大学の授業でプログラミングに興味を持ち、独学を開始",
+    "exp.kyutech.point2": "複数の企業でインターンとして従事",
 
     "exp.fusic.title": "PHPエンジニア",
     "exp.fusic.company": "株式会社Fusic",
     "exp.fusic.date": "2022年6月 - 2022年9月",
-    "exp.fusic.point1": "人生で初めて実際のプロジェクトに配属されました。",
-    "exp.fusic.point2":
-      "要件定義や画面設計から開発まで、一連の経験を積みました。",
-    "exp.fusic.point3": "PHPフレームワークのLaravelの経験もあります。",
+    "exp.fusic.point1": "初めて実際のプロジェクトに配属",
+    "exp.fusic.point2": "要件定義や画面設計から開発まで、一連の業務を担当",
+    "exp.fusic.point3": "PHPフレームワークのLaravelの経験あり",
 
     "exp.mf.title": "Rubyエンジニア",
     "exp.mf.company": "株式会社マネーフォワード",
     "exp.mf.date": "2022年12月 - 2023年8月",
-    "exp.mf.point1": "初めてRubyとRailsを学びました。",
+    "exp.mf.point1": "RubyとRailsを学習",
     "exp.mf.point2":
-      "Railsを使用してファイナンシャルプランナー予約サイトを作成しました。",
-    "exp.mf.point3":
-      "Railsを使用した決済サービスの管理画面開発の経験があります。",
+      "Railsを使用したファイナンシャルプランナー予約サイトの開発",
+    "exp.mf.point3": "Railsを使用した決済サービスの管理画面開発を担当",
 
     "exp.dmm.title": "Goエンジニア",
     "exp.dmm.company": "合同会社DMM.com",
     "exp.dmm.date": "2023年10月 - 現在",
-    "exp.dmm.point1": "初めてGoを学びました。",
+    "exp.dmm.point1": "Goを使用した動画配信サイトの開発を担当",
     "exp.dmm.point2":
-      "GraphQLとgRPCを使用したサーバー構築を初めて行い、実際のプロジェクトでRedis、Cloud Spanner、GCPを使用したデータベース操作を学びました。",
-    "exp.dmm.point3": "Goを使用した動画配信サイトの開発経験があります。",
+      "GraphQLとgRPCを使用したサーバー構築を担当し、実際のプロジェクトでRedis、Cloud Spanner、GCPを使用したデータベース操作を実装",
+    "exp.dmm.point3": "案件のリード経験がある",
 
     "exp.nook.title": "Pythonエンジニア",
     "exp.nook.company": "株式会社Nook",
-    "exp.nook.date": "2025年3月 - 現在",
-    "exp.nook.point1":
-      "Pythonを使用した二次流通アパレルプラットフォームのバックエンドサービスを開発しています。",
+    "exp.nook.date": "2025年3月 - 2025年11月",
+    "exp.nook.point1": "副業として参画",
     "exp.nook.point2":
-      "AWSとGCPでのインフラパイプラインの構築・保守を担当しています。",
+      "Pythonを使用した二次流通アパレルプラットフォームのバックエンドサービスを開発",
+    "exp.nook.point3": "AWSとGCPでのインフラパイプラインの構築・保守を担当",
+
+    "exp.newr.title": "CTO",
+    "exp.newr.company": "合同会社Newr",
+    "exp.newr.date": "2025年12月 - 現在",
+    "exp.newr.point1": "合同会社Newrを創立",
+    "exp.newr.point2": "CTOとして技術戦略と開発をリード",
+    "exp.newr.point3": "自社プロダクトの実装から受託開発まで、開発を全て担当",
   },
 };
 

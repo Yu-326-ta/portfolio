@@ -60,7 +60,15 @@ const experiences: Experience[] = [
     icon: "/assets/company/nook.png",
     iconBg: "#4B4B4B",
     dateKey: "exp.nook.date",
-    pointKeys: ["exp.nook.point1", "exp.nook.point2"],
+    pointKeys: ["exp.nook.point1", "exp.nook.point2", "exp.nook.point3"],
+  },
+  {
+    titleKey: "exp.newr.title",
+    companyKey: "exp.newr.company",
+    icon: "/assets/company/newr.png",
+    iconBg: "#FFFFFF",
+    dateKey: "exp.newr.date",
+    pointKeys: ["exp.newr.point1", "exp.newr.point2", "exp.newr.point3"],
   },
 ];
 

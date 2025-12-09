@@ -129,7 +129,7 @@ const Experience = () => {
   const { t, language } = useLanguage();
 
   return (
-    <div id="experience" className="mb-16 lg:mb-96">
+    <div id="experience" className="mb-32 lg:mb-64">
       <motion.div
         variants={fadeIn("up", 0.3)}
         initial="hidden"
@@ -163,7 +163,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-      <div className="mb-16 lg:mb-96"></div>
+      <div className="mb-8 lg:mb-24"></div>
     </div>
   );
 };

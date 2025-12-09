@@ -79,6 +79,7 @@ const translations: Record<Language, Record<string, string>> = {
     "project.newr.description":
       "The official website for Newr LLC, showcasing company services, philosophy, and products including EatPass.",
     "project.category.webapp": "Web Application",
+    "project.category.website": "Website",
     "project.category.mobile": "Mobile App",
     "project.category.portfolio": "Portfolio",
 
@@ -190,6 +191,7 @@ const translations: Record<Language, Record<string, string>> = {
     "project.newr.description":
       "合同会社Newrの公式サイト。会社のサービス、理念、EatPassを含むプロダクトを紹介。",
     "project.category.webapp": "Webアプリ",
+    "project.category.website": "WEBサイト",
     "project.category.mobile": "モバイルアプリ",
     "project.category.portfolio": "ポートフォリオ",
 

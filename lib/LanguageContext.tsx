@@ -56,7 +56,7 @@ const translations: Record<Language, Record<string, string>> = {
     "work.viewProject": "View Project",
     "work.ctaTitle": "Ready to collaborate?",
     "work.ctaDescription":
-      "I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together to bring your ideas to life.",
+      "I'm always interested in new opportunities and exciting projects.\n\nLet's discuss how we can work together to bring your ideas to life.",
     "work.getInTouch": "Get In Touch",
 
     // Contact
@@ -72,6 +72,12 @@ const translations: Record<Language, Record<string, string>> = {
       "An innovative mobile application for AI prompt management and optimization with intuitive user interface and cloud synchronization.",
     "project.portfolio.description":
       "A modern, responsive portfolio website showcasing professional experience and projects with smooth animations and clean design.",
+    "project.aio.description":
+      "A corporate website for AIO countermeasures, providing information and solutions.",
+    "project.adventura.description":
+      "An RPG-style task management application that gamifies productivity with engaging quests and character progression.",
+    "project.newr.description":
+      "The official website for Newr LLC, showcasing company services, philosophy, and products including EatPass.",
     "project.category.webapp": "Web Application",
     "project.category.mobile": "Mobile App",
     "project.category.portfolio": "Portfolio",
@@ -161,7 +167,7 @@ const translations: Record<Language, Record<string, string>> = {
     "work.viewProject": "プロジェクトを見る",
     "work.ctaTitle": "一緒に働きませんか？",
     "work.ctaDescription":
-      "新しい機会やエキサイティングなプロジェクトに常に興味があります。あなたのアイデアを形にするために、一緒に働きましょう。",
+      "新しい機会やエキサイティングなプロジェクトに常に興味があります。\n\nあなたのアイデアを形にするために、一緒に働きましょう。",
     "work.getInTouch": "お問い合わせ",
 
     // Contact
@@ -177,6 +183,12 @@ const translations: Record<Language, Record<string, string>> = {
       "直感的なUIとクラウド同期機能を備えた、AIプロンプト管理・最適化のための革新的なモバイルアプリケーション。",
     "project.portfolio.description":
       "スムーズなアニメーションとクリーンなデザインで、職務経歴やプロジェクトを紹介するモダンでレスポンシブなポートフォリオサイト。",
+    "project.aio.description":
+      "AIO対策に関する情報とソリューションを提供する企業サイト。",
+    "project.adventura.description":
+      "RPG風のタスク管理アプリ。クエストやキャラクター成長要素を取り入れて、生産性をゲーミフィケーションする。",
+    "project.newr.description":
+      "合同会社Newrの公式サイト。会社のサービス、理念、EatPassを含むプロダクトを紹介。",
     "project.category.webapp": "Webアプリ",
     "project.category.mobile": "モバイルアプリ",
     "project.category.portfolio": "ポートフォリオ",

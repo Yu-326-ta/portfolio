@@ -96,9 +96,13 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{t(experience.titleKey)}</h3>
+        <h3 className="text-white text-[24px] font-bold">
+          {t(experience.titleKey)}
+        </h3>
         <p
-          className={`text-secondary text-[16px] font-semibold ${language === "ja" ? "font-japanese" : ""}`}
+          className={`text-secondary text-[16px] font-semibold ${
+            language === "ja" ? "font-japanese" : ""
+          }`}
           style={{ margin: 0 }}
         >
           {t(experience.companyKey)}
@@ -109,7 +113,9 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
         {experience.pointKeys.map((pointKey, index) => (
           <li
             key={`experience-point-${index}`}
-            className={`text-white-100 text-[14px] pl-1 tracking-wider ${language === "ja" ? "font-japanese" : ""}`}
+            className={`text-white-100 text-[14px] pl-1 tracking-wider ${
+              language === "ja" ? "font-japanese" : ""
+            }`}
           >
             {t(pointKey)}
           </li>
@@ -123,7 +129,7 @@ const Experience = () => {
   const { t, language } = useLanguage();
 
   return (
-    <div id="experience">
+    <div id="experience" className="mb-16 lg:mb-96">
       <motion.div
         variants={fadeIn("up", 0.3)}
         initial="hidden"
@@ -135,9 +141,11 @@ const Experience = () => {
             : "text-[55px] lg:text-[110px]"
         }`}
       >
-        <p className={`${styles.sectionSubText} text-center ${
-          language === "ja" ? "mb-8 lg:mb-12 font-japanese" : "mb-4"
-        } text-accent`}>
+        <p
+          className={`${styles.sectionSubText} text-center ${
+            language === "ja" ? "mb-8 lg:mb-12 font-japanese" : "mb-4"
+          } text-accent`}
+        >
           {t("experience.subtitle")}
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
@@ -155,6 +163,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
+      <div className="mb-16 lg:mb-96"></div>
     </div>
   );
 };

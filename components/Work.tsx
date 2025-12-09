@@ -46,6 +46,33 @@ const projects: Project[] = [
     categoryKey: "project.category.portfolio",
     link: "https://www.yu-326-ta.com/",
   },
+  {
+    id: 4,
+    title: "aio対策HP",
+    descriptionKey: "project.aio.description",
+    image: "/assets/products/aio.png",
+    technologies: ["Next.js", "Tailwind CSS"],
+    categoryKey: "project.category.webapp",
+    link: "https://www.aio-marketing.net/",
+  },
+  {
+    id: 5,
+    title: "Adventura",
+    descriptionKey: "project.adventura.description",
+    image: "/assets/products/adventura.png",
+    technologies: ["Next.js", "Tailwind CSS", "Supabase", "AWS"],
+    categoryKey: "project.category.webapp",
+    link: "https://adventura.jp/",
+  },
+  {
+    id: 6,
+    title: "Newr HP",
+    descriptionKey: "project.newr.description",
+    image: "/assets/products/newr.png",
+    technologies: ["Next.js", "Tailwind CSS"],
+    categoryKey: "project.category.webapp",
+    link: "https://www.newr.jp/",
+  },
 ];
 
 const Work = () => {
@@ -117,7 +144,7 @@ const Work = () => {
   );
 
   return (
-    <section className="section py-32 mt-96" id="work">
+    <section className="section py-32 pt-16 lg:pt-96 mb-16 lg:mb-96" id="work">
       <div className="container mx-auto px-4">
         {/* Title Section */}
         <motion.div
@@ -143,22 +170,6 @@ const Work = () => {
           </h2>
         </motion.div>
 
-        {/* Introduction */}
-        <motion.div
-          variants={fadeIn("up", 0.4)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="text-center mb-16 max-w-3xl mx-auto"
-        >
-          <p className={`text-gray-300 text-lg leading-relaxed mb-8 ${language === "ja" ? "font-japanese" : ""}`}>
-            {t("work.description")}
-          </p>
-          <Button variant="gradient" className="btn-lg">
-            {t("work.viewAll")}
-          </Button>
-        </motion.div>
-
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
@@ -178,15 +189,22 @@ const Work = () => {
             <h3 className={`text-2xl font-bold text-white mb-4 ${language === "ja" ? "font-japanese" : ""}`}>
               {t("work.ctaTitle")}
             </h3>
-            <p className={`text-gray-300 mb-6 max-w-2xl mx-auto ${language === "ja" ? "font-japanese" : ""}`}>
-              {t("work.ctaDescription")}
-            </p>
+            <div className={`text-gray-300 mb-6 max-w-2xl mx-auto ${language === "ja" ? "font-japanese" : ""}`}>
+              {t("work.ctaDescription")
+                .split("\n\n")
+                .map((paragraph, index) => (
+                  <p key={index} className={index > 0 ? "mt-4" : ""}>
+                    {paragraph}
+                  </p>
+                ))}
+            </div>
             <Button variant="gradient" className="btn-lg">
               {t("work.getInTouch")}
             </Button>
           </div>
         </motion.div>
       </div>
+      <div className="mb-16 lg:mb-96"></div>
     </section>
   );
 };

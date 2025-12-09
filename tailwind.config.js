@@ -10,6 +10,7 @@ module.exports = {
       primary: ["var(--font-orbitron)", "sans-serif"],
       secondary: ["var(--font-rajdhani)", "sans-serif"],
       tertiary: ["var(--font-aldrich)", "sans-serif"],
+      japanese: ["var(--font-noto-sans-jp)", "sans-serif"],
     },
     container: {
       padding: {

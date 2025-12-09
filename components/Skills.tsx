@@ -5,8 +5,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 import { styles } from "@/lib/styles";
+import { useLanguage } from "@/lib/LanguageContext";
 
 const Skills = () => {
+  const { t } = useLanguage();
+
   const techs = [
     {
       id: 1,
@@ -145,9 +148,9 @@ const Skills = () => {
           <p
             className={`${styles.sectionSubText} text-center mb-4 text-accent`}
           >
-            Technologies I&apos;ve worked with
+            {t("skills.subtitle")}
           </p>
-          <h2 className={`${styles.sectionHeadText} text-center`}>Skills.</h2>
+          <h2 className={`${styles.sectionHeadText} text-center`}>{t("skills.title")}</h2>
         </motion.div>
 
         {/* Scrolling Skills */}

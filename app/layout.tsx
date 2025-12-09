@@ -1,29 +1,37 @@
 import type { Metadata } from "next";
-import { Orbitron, Rajdhani, Aldrich } from "next/font/google";
+import { Orbitron, Rajdhani, Aldrich, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { LanguageProvider } from "@/lib/LanguageContext";
 
-const orbitron = Orbitron({ 
+const orbitron = Orbitron({
   subsets: ["latin"],
   variable: "--font-orbitron",
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const rajdhani = Rajdhani({ 
+const rajdhani = Rajdhani({
   subsets: ["latin"],
   variable: "--font-rajdhani",
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const aldrich = Aldrich({ 
+const aldrich = Aldrich({
   subsets: ["latin"],
   variable: "--font-aldrich",
   weight: "400",
 });
 
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  variable: "--font-noto-sans-jp",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
   title: "Yuta Yoshinaga - Portfolio",
-  description: "Personal portfolio of Yuta Yoshinaga, a software engineer specializing in backend development.",
+  description:
+    "Personal portfolio of Yuta Yoshinaga, a software engineer specializing in backend development.",
 };
 
 export default function RootLayout({
@@ -32,9 +40,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${orbitron.variable} ${rajdhani.variable} ${aldrich.variable}`}>
+    <html
+      lang="en"
+      className={`${orbitron.variable} ${rajdhani.variable} ${aldrich.variable} ${notoSansJP.variable}`}
+    >
       <body className="font-secondary">
-        {children}
+        <LanguageProvider>{children}</LanguageProvider>
         <Analytics />
       </body>
     </html>

@@ -6,11 +6,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BiHomeAlt, BiUser } from "react-icons/bi";
 import { BsClipboardData, BsBriefcase, BsChatSquare } from "react-icons/bs";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { useLanguage } from "@/lib/LanguageContext";
 
 const ModernNav = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [scrollY, setScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -19,16 +21,20 @@ const ModernNav = () => {
   }, []);
 
   const navItems = [
-    { id: "home", label: "Home", icon: BiHomeAlt },
-    { id: "skills", label: "Skills", icon: BsClipboardData },
-    { id: "experience", label: "Experience", icon: BiUser },
-    { id: "work", label: "Work", icon: BsBriefcase },
-    { id: "contact", label: "Contact", icon: BsChatSquare },
+    { id: "home", labelKey: "nav.home", icon: BiHomeAlt },
+    { id: "skills", labelKey: "nav.skills", icon: BsClipboardData },
+    { id: "experience", labelKey: "nav.experience", icon: BiUser },
+    { id: "work", labelKey: "nav.work", icon: BsBriefcase },
+    { id: "contact", labelKey: "nav.contact", icon: BsChatSquare },
   ];
 
   const handleMobileMenuClick = (itemId: string) => {
     setActiveSection(itemId);
     setIsMobileMenuOpen(false);
+  };
+
+  const toggleLanguage = () => {
+    setLanguage(language === "en" ? "ja" : "en");
   };
 
   return (
@@ -79,7 +85,7 @@ const ModernNav = () => {
                     }
                   `}
                 >
-                  <span className="relative z-10">{item.label}</span>
+                  <span className="relative z-10">{t(item.labelKey)}</span>
 
                   {/* Active indicator */}
                   {activeSection === item.id && (
@@ -96,6 +102,23 @@ const ModernNav = () => {
                 </Link>
               </motion.div>
             ))}
+
+            {/* Language Switcher */}
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: navItems.length * 0.1 }}
+            >
+              <button
+                onClick={toggleLanguage}
+                className="relative cursor-pointer px-4 py-2 rounded-full text-sm font-bold
+                  transition-all duration-300 whitespace-nowrap
+                  bg-accent/20 text-accent border border-accent/50
+                  hover:bg-accent/30 hover:scale-105"
+              >
+                {language === "en" ? "日本語" : "EN"}
+              </button>
+            </motion.div>
           </div>
 
           {/* Subtle glow effect */}
@@ -114,8 +137,17 @@ const ModernNav = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="md:hidden fixed top-4 right-4 z-50"
+        className="md:hidden fixed top-4 right-4 z-50 flex items-center gap-2"
       >
+        {/* Mobile Language Switcher */}
+        <motion.button
+          whileTap={{ scale: 0.9 }}
+          onClick={toggleLanguage}
+          className="p-2 px-3 rounded-full bg-black/80 border border-accent/50 backdrop-blur-md shadow-lg text-accent text-sm font-bold hover:bg-black/90 transition-colors duration-300"
+        >
+          {language === "en" ? "日" : "EN"}
+        </motion.button>
+
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -177,7 +209,7 @@ const ModernNav = () => {
                         >
                           <Icon size={18} />
                           <span className="font-medium text-sm">
-                            {item.label}
+                            {t(item.labelKey)}
                           </span>
                         </Link>
                       </motion.div>

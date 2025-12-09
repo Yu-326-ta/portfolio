@@ -5,8 +5,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/lib/LanguageContext";
 
 const Contact = () => {
+  const { t, language } = useLanguage();
+
   return (
     <section className="section my-8 lg:my-24" id="contact">
       <div className="container mx-auto">
@@ -18,9 +21,9 @@ const Contact = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[60x] font-secondary font-semibold uppercase leading-[1] text-accent"
+              className={`mb-6 text-[36px] lg:text-[60x] font-secondary font-semibold uppercase leading-[1] text-accent ${language === "ja" ? "font-japanese" : ""}`}
             >
-              Get in touch
+              {t("contact.subtitle")}
             </motion.div>
             <motion.h2
               variants={fadeIn("up", 0.3)}
@@ -29,17 +32,16 @@ const Contact = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="text-[55px] font-bold leading-[0.8] lg:text-[110px] mb-4"
             >
-              Contact
+              {t("contact.title")}
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0"
+              className={`mb-8 max-w-lg mx-auto lg:mx-0 ${language === "ja" ? "font-japanese" : ""}`}
             >
-              If you would like to contact me, please send an e-mail to the
-              following e-mail address
+              {t("contact.description")}
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}

@@ -6,10 +6,52 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 import { styles } from "@/lib/styles";
 import { Button } from "@/components/ui/button";
-import { projects } from "@/lib/projects";
+import { useLanguage } from "@/lib/LanguageContext";
+
+interface Project {
+  id: number;
+  title: string;
+  descriptionKey: string;
+  image: string;
+  technologies: string[];
+  categoryKey: string;
+  link: string;
+}
+
+const projects: Project[] = [
+  {
+    id: 1,
+    title: "EatPass",
+    descriptionKey: "project.eatpass.description",
+    image: "/assets/products/eatpass.png",
+    technologies: ["Next.js", "Supabase", "AWS", "Tailwind CSS"],
+    categoryKey: "project.category.webapp",
+    link: "https://www.eatpass.jp/ja",
+  },
+  {
+    id: 2,
+    title: "Prompt Crash",
+    descriptionKey: "project.procra.description",
+    image: "/assets/products/procra.png",
+    technologies: ["Flutter", "Supabase"],
+    categoryKey: "project.category.mobile",
+    link: "https://procra.jp/",
+  },
+  {
+    id: 3,
+    title: "Portfolio",
+    descriptionKey: "project.portfolio.description",
+    image: "/assets/products/portfolio.png",
+    technologies: ["Next.js", "Tailwind CSS"],
+    categoryKey: "project.category.portfolio",
+    link: "https://www.yu-326-ta.com/",
+  },
+];
 
 const Work = () => {
-  const ProjectCard = ({ project, index }: { project: any; index: number }) => (
+  const { t, language } = useLanguage();
+
+  const ProjectCard = ({ project, index }: { project: Project; index: number }) => (
     <motion.div
       variants={fadeIn("up", 0.2 + index * 0.1)}
       initial="hidden"
@@ -29,8 +71,8 @@ const Work = () => {
 
         {/* Category Badge */}
         <div className="absolute top-4 left-4">
-          <span className="px-3 py-1 text-xs font-semibold bg-accent/80 text-white rounded-full backdrop-blur-sm">
-            {project.category}
+          <span className={`px-3 py-1 text-xs font-semibold bg-accent/80 text-white rounded-full backdrop-blur-sm ${language === "ja" ? "font-japanese" : ""}`}>
+            {t(project.categoryKey)}
           </span>
         </div>
 
@@ -42,7 +84,7 @@ const Work = () => {
             rel="noopener noreferrer"
             className="transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
           >
-            <Button variant="gradient">View Project</Button>
+            <Button variant="gradient">{t("work.viewProject")}</Button>
           </a>
         </div>
       </div>
@@ -52,8 +94,8 @@ const Work = () => {
         <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors duration-300">
           {project.title}
         </h3>
-        <p className="text-gray-300 text-sm mb-4 leading-relaxed">
-          {project.description}
+        <p className={`text-gray-300 text-sm mb-4 leading-relaxed ${language === "ja" ? "font-japanese" : ""}`}>
+          {t(project.descriptionKey)}
         </p>
 
         {/* Technologies */}
@@ -86,12 +128,12 @@ const Work = () => {
           className="text-[55px] font-bold leading-[0.8] lg:text-[110px] text-center mb-20"
         >
           <p
-            className={`${styles.sectionSubText} text-center mb-4 text-accent`}
+            className={`${styles.sectionSubText} text-center mb-4 text-accent ${language === "ja" ? "font-japanese" : ""}`}
           >
-            Featured Projects & Applications
+            {t("work.subtitle")}
           </p>
           <h2 className={`${styles.sectionHeadText} text-center`}>
-            My Latest Work.
+            {t("work.title")}
           </h2>
         </motion.div>
 
@@ -103,14 +145,11 @@ const Work = () => {
           viewport={{ once: false, amount: 0.7 }}
           className="text-center mb-16 max-w-3xl mx-auto"
         >
-          <p className="text-gray-300 text-lg leading-relaxed mb-8">
-            Here are some of the projects I&apos;ve worked on recently. Each
-            project represents a unique challenge and showcases different
-            technologies and methodologies I&apos;ve employed to create
-            innovative solutions.
+          <p className={`text-gray-300 text-lg leading-relaxed mb-8 ${language === "ja" ? "font-japanese" : ""}`}>
+            {t("work.description")}
           </p>
           <Button variant="gradient" className="btn-lg">
-            View All Projects
+            {t("work.viewAll")}
           </Button>
         </motion.div>
 
@@ -130,16 +169,14 @@ const Work = () => {
           className="text-center mt-20"
         >
           <div className="bg-gradient-to-r from-accent/10 to-purple-500/10 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Ready to collaborate?
+            <h3 className={`text-2xl font-bold text-white mb-4 ${language === "ja" ? "font-japanese" : ""}`}>
+              {t("work.ctaTitle")}
             </h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              I&apos;m always interested in new opportunities and exciting
-              projects. Let&apos;s discuss how we can work together to bring
-              your ideas to life.
+            <p className={`text-gray-300 mb-6 max-w-2xl mx-auto ${language === "ja" ? "font-japanese" : ""}`}>
+              {t("work.ctaDescription")}
             </p>
             <Button variant="gradient" className="btn-lg">
-              Get In Touch
+              {t("work.getInTouch")}
             </Button>
           </div>
         </motion.div>

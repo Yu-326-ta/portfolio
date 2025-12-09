@@ -144,7 +144,7 @@ const Experience = () => {
         <p
           className={`${styles.sectionSubText} text-center ${
             language === "ja" ? "mb-8 lg:mb-12 font-japanese" : "mb-4"
-          } text-accent`}
+          } text-[#B809C3]`}
         >
           {t("experience.subtitle")}
         </p>

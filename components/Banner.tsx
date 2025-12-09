@@ -51,13 +51,19 @@ const Banner = () => {
                 repeat={Infinity}
               />
             </motion.div>
-            <p
+            <div
               className={`mb-8 max-w-lg mx-auto lg:mx-0 ${
                 language === "ja" ? "font-japanese" : ""
               }`}
             >
-              {t("banner.description")}
-            </p>
+              {t("banner.description")
+                .split("\n\n")
+                .map((paragraph, index) => (
+                  <p key={index} className={index > 0 ? "mt-4" : ""}>
+                    {paragraph}
+                  </p>
+                ))}
+            </div>
             <div className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
               <ScrollLink
                 to="contact"
@@ -70,15 +76,14 @@ const Banner = () => {
                   {t("banner.contactMe")}
                 </Button>
               </ScrollLink>
-              <ScrollLink
-                to="work"
-                smooth={true}
-                duration={500}
-                offset={-80}
+              <Link
+                href="https://www.newr.jp/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-link text-accent font-secondary font-semibold cursor-pointer"
               >
                 {t("banner.myPortfolio")}
-              </ScrollLink>
+              </Link>
             </div>
             <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
               <Link href="https://twitter.com/Yu326ta" aria-label="Twitter">

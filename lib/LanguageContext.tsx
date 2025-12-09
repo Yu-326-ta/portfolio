@@ -35,9 +35,9 @@ const translations: Record<Language, Record<string, string>> = {
     "banner.role1": "Software Engineer",
     "banner.role2": "Product Developer",
     "banner.description":
-      "Hi! I'm Yuta Yoshinaga. I am working as a software engineer at an IT company. I specialize in backend development and have experience with various technologies. I am particularly interested in developing new business projects and creating innovative solutions. Currently focusing on building scalable and efficient backend systems!",
+      "Hello, I'm Yuta Yoshinaga. I work as a software engineer at an IT company, specializing in backend development and excelling in scalable and robust system design.\n\nIn contract development, I have been involved in a wide range of projects from web and mobile app development to creating landing pages and corporate websites, consistently handling everything from technology selection to implementation and operation.\n\nI also founded Newr LLC and am working on developing EatPass, our own product. I have a strong interest in launching new businesses and creating products that solve problems, aiming to create valuable experiences through technology.",
     "banner.contactMe": "Contact me",
-    "banner.myPortfolio": "My Portfolio",
+    "banner.myPortfolio": "Company Website",
 
     // Skills
     "skills.subtitle": "Technologies I've worked with",
@@ -131,9 +131,9 @@ const translations: Record<Language, Record<string, string>> = {
     "banner.role1": "Software Engineer",
     "banner.role2": "Product Developer",
     "banner.description":
-      "はじめまして！吉永裕太です。IT企業でソフトウェアエンジニアとして働いています。バックエンド開発を専門としており、様々な技術に経験があります。特に新規事業の開発や革新的なソリューションの創造に興味があります。現在はスケーラブルで効率的なバックエンドシステムの構築に注力しています！",
+      "はじめまして、吉永湧太です。IT企業でソフトウェアエンジニアとして働いており、バックエンド開発を中心に、スケーラブルで堅牢なシステム設計を得意としています。\n\n受託開発では、Webアプリ・モバイルアプリの開発から、LP・企業サイトなどの制作まで、幅広い領域のプロジェクトに携わり、技術選定から実装、運用まで一貫して担当しています。\n\nまた、合同会社Newrを創立し、自社プロダクトである EatPass の開発にも取り組んでいます。新規事業の立ち上げや課題解決に向けたプロダクトの創造に強い関心があり、技術を通じて価値ある体験を生み出すことを目指しています。",
     "banner.contactMe": "お問い合わせ",
-    "banner.myPortfolio": "ポートフォリオ",
+    "banner.myPortfolio": "会社HPへ",
 
     // Skills
     "skills.subtitle": "使用してきた技術",

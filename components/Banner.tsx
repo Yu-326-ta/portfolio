@@ -29,7 +29,7 @@ const Banner = () => {
 
   return (
     <section
-      className="min-h-[100vh] flex items-center relative overflow-hidden pt-28 lg:pt-36 pb-12"
+      className="min-h-[100vh] flex items-center relative pt-28 lg:pt-36 pb-0 lg:pb-12"
       id="home"
     >
       {/* Background Elements */}
@@ -71,8 +71,8 @@ const Banner = () => {
               viewport={{ once: true, amount: 0.3 }}
               className="text-[40px] font-bold leading-[0.9] lg:text-[110px] mb-6"
             >
-              YUTA{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-cyan-400">
+              <span className="text-white">YUTA </span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B809C3] to-[#22D3EE]">
                 YOSHINAGA
               </span>
             </motion.h1>
@@ -89,7 +89,7 @@ const Banner = () => {
                 key={language}
                 sequence={[t("banner.role1"), 2000, t("banner.role2"), 2000]}
                 speed={50}
-                className="text-accent decoration-cyan-400"
+                className="text-[#B809C3]"
                 wrapper="span"
                 repeat={Infinity}
               />
@@ -186,7 +186,7 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.3 }}
-            className="flex flex-1 max-w-[200px] lg:max-w-[500px] w-full relative justify-center items-center mx-auto mt-8 lg:mt-0"
+            className="flex flex-1 max-w-[280px] sm:max-w-[350px] lg:max-w-[500px] w-full relative justify-center items-center mx-auto mt-8 lg:mt-0"
           >
             {/* Decorative circle behind image */}
             <motion.div

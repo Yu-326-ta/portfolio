@@ -135,7 +135,7 @@ const Skills = () => {
   );
 
   return (
-    <section className="section py-32 overflow-hidden" id="skills">
+    <section className="section pt-0 lg:pt-32 pb-32 overflow-hidden" id="skills">
       <div className="container mx-auto">
         {/* Title Section */}
         <motion.div
@@ -152,7 +152,7 @@ const Skills = () => {
           <p
             className={`${styles.sectionSubText} text-center ${
               language === "ja" ? "mb-8 lg:mb-12" : "mb-4"
-            } text-accent`}
+            } text-[#B809C3]`}
           >
             {t("skills.subtitle")}
           </p>

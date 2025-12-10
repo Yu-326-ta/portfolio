@@ -32,6 +32,10 @@ export const metadata: Metadata = {
   title: "Yuta Yoshinaga - Portfolio",
   description:
     "Personal portfolio of Yuta Yoshinaga, a software engineer specializing in backend development.",
+  icons: {
+    icon: "/assets/about.png",
+    apple: "/assets/about.png",
+  },
 };
 
 export default function RootLayout({

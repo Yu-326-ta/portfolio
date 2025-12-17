@@ -64,6 +64,7 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.title": "Contact",
     "contact.description":
       "If you would like to contact me, please send an e-mail to the following e-mail address",
+    "contact.button": "Go to Contact Form",
 
     // Projects
     "project.eatpass.description":
@@ -176,6 +177,7 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.title": "連絡先",
     "contact.description":
       "ご連絡いただける場合は、以下のメールアドレスにお問い合わせください",
+    "contact.button": "お問い合わせフォームへ",
 
     // Projects
     "project.eatpass.description":

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 import { Button } from "@/components/ui/button";
@@ -56,7 +57,15 @@ const Contact = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <Button variant="gradient" className="btn-lg">yoshi.yuta326@gmail.com</Button>
+              <Link
+                href="https://www.newr.jp/contact"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="gradient" className="btn-lg">
+                  {t("contact.button")}
+                </Button>
+              </Link>
             </motion.div>
           </div>
           {/* image */}

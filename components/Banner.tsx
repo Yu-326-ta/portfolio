@@ -174,7 +174,7 @@ const Banner = () => {
                     className="text-white hover:text-accent hover:scale-110 transition-all duration-300"
                   >
                     <Icon size={28} />
-                  </Link>
+              </Link>
                 );
               })}
             </motion.div>
@@ -214,14 +214,14 @@ const Banner = () => {
               }}
               className="w-full h-auto"
             >
-              <Image
-                src="/assets/about.png"
-                alt="Profile"
+            <Image
+              src="/assets/about.png"
+              alt="Profile"
                 width={500}
-                height={600}
+              height={600}
                 className="w-full h-auto drop-shadow-2xl object-contain"
                 priority
-              />
+            />
             </motion.div>
           </motion.div>
         </div>

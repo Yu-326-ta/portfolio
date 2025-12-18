@@ -144,7 +144,7 @@ const ModernNav = () => {
           whileTap={{ scale: 0.9 }}
           onClick={toggleLanguage}
           className="p-2 px-3 rounded-full bg-white/10 border border-white/20 backdrop-blur-md shadow-lg text-accent text-sm font-bold hover:bg-white/20 transition-colors duration-300"
-        >
+      >
           {language === "en" ? "日" : "EN"}
         </motion.button>
 

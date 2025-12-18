@@ -4,19 +4,19 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { LanguageProvider } from "@/lib/LanguageContext";
 
-const orbitron = Orbitron({
+const orbitron = Orbitron({ 
   subsets: ["latin"],
   variable: "--font-orbitron",
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const rajdhani = Rajdhani({
+const rajdhani = Rajdhani({ 
   subsets: ["latin"],
   variable: "--font-rajdhani",
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const aldrich = Aldrich({
+const aldrich = Aldrich({ 
   subsets: ["latin"],
   variable: "--font-aldrich",
   weight: "400",

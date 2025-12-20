@@ -32,33 +32,9 @@ const Banner = () => {
       className="min-h-[100vh] flex items-center relative pt-28 lg:pt-36 pb-0 lg:pb-12"
       id="home"
     >
-      {/* Background Elements */}
-      <motion.div
-        animate={{
-          scale: [1, 1.2, 1],
-          rotate: [0, 90, 0],
-          opacity: [0.3, 0.5, 0.3],
-        }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          repeatType: "reverse",
-        }}
-        className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-accent/20 rounded-full blur-[120px] mix-blend-screen pointer-events-none"
-      />
-      <motion.div
-        animate={{
-          scale: [1, 1.5, 1],
-          x: [0, 100, 0],
-          opacity: [0.2, 0.4, 0.2],
-        }}
-        transition={{
-          duration: 15,
-          repeat: Infinity,
-          repeatType: "reverse",
-        }}
-        className="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[100px] mix-blend-screen pointer-events-none"
-      />
+      {/* Background Elements - 静的な装飾に変更（パフォーマンス改善） */}
+      <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-accent/30 rounded-full blur-[120px] mix-blend-screen pointer-events-none" />
+      <div className="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-blue-600/25 rounded-full blur-[100px] mix-blend-screen pointer-events-none" />
 
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
@@ -188,41 +164,17 @@ const Banner = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="flex flex-1 max-w-[280px] sm:max-w-[350px] lg:max-w-[500px] w-full relative justify-center items-center mx-auto mt-8 lg:mt-0"
           >
-            {/* Decorative circle behind image */}
-            <motion.div
-              animate={{
-                scale: [1, 1.1, 1],
-                opacity: [0.5, 0.8, 0.5],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                repeatType: "reverse",
-              }}
-              className="absolute w-[300px] lg:w-[600px] h-[300px] lg:h-[600px] bg-gradient-to-b from-accent/20 to-transparent rounded-full blur-3xl -z-10"
-            />
+            {/* Decorative circle behind image - 静的に変更 */}
+            <div className="absolute w-[300px] lg:w-[600px] h-[300px] lg:h-[600px] bg-gradient-to-b from-accent/30 to-transparent rounded-full blur-3xl -z-10" />
 
-            <motion.div
-              animate={{
-                y: [0, -15, 0],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut",
-              }}
-              className="w-full h-auto"
-            >
             <Image
               src="/assets/about.png"
               alt="Profile"
-                width={500}
+              width={500}
               height={600}
-                className="w-full h-auto drop-shadow-2xl object-contain"
-                priority
+              className="w-full h-auto drop-shadow-2xl object-contain"
+              priority
             />
-            </motion.div>
           </motion.div>
         </div>
       </div>

@@ -3,9 +3,9 @@ import { Variants } from 'framer-motion';
 export const fadeIn = (direction: string, delay: number): Variants => {
   return {
     hidden: {
-      y: direction === 'up' ? 80 : direction === 'down' ? -80 : 0,
+      y: direction === 'up' ? 30 : direction === 'down' ? -30 : 0,
       opacity: 0,
-      x: direction === 'left' ? 80 : direction === 'right' ? -80 : 0,
+      x: direction === 'left' ? 30 : direction === 'right' ? -30 : 0,
     },
     show: {
       y: 0,
@@ -13,9 +13,9 @@ export const fadeIn = (direction: string, delay: number): Variants => {
       opacity: 1,
       transition: {
         type: 'tween',
-        duration: 1.2,
-        delay: delay,
-        ease: [0.25, 0.25, 0.25, 0.75] as [number, number, number, number],
+        duration: 0.5,
+        delay: delay * 0.5, // delayも短縮
+        ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number],
       },
     },
   };

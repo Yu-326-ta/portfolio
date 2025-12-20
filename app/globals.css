@@ -114,3 +114,20 @@
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
 }
+
+/* パフォーマンス最適化 - reduce-motion対応 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* GPUアクセラレーション用 */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+}

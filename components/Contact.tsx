@@ -21,10 +21,12 @@ const Contact = () => {
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.3 }}
               className={`${
                 language === "ja" ? "mb-10 lg:mb-14" : "mb-6"
-              } text-[36px] lg:text-[60x] font-secondary font-semibold uppercase leading-[1] text-accent ${language === "ja" ? "font-japanese" : ""}`}
+              } text-[36px] lg:text-[60x] font-secondary font-semibold uppercase leading-[1] text-accent ${
+                language === "ja" ? "font-japanese" : ""
+              }`}
             >
               {t("contact.subtitle")}
             </motion.div>
@@ -32,7 +34,7 @@ const Contact = () => {
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.3 }}
               className={`font-bold leading-[0.8] mb-4 ${
                 language === "ja"
                   ? "text-[40px] lg:text-[80px]"
@@ -45,8 +47,10 @@ const Contact = () => {
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className={`mb-8 max-w-lg mx-auto lg:mx-0 ${language === "ja" ? "font-japanese" : ""}`}
+              viewport={{ once: true, amount: 0.3 }}
+              className={`mb-8 max-w-lg mx-auto lg:mx-0 ${
+                language === "ja" ? "font-japanese" : ""
+              }`}
             >
               {t("contact.description")}
             </motion.p>
@@ -54,7 +58,7 @@ const Contact = () => {
               variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.3 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
               <Link
@@ -73,14 +77,14 @@ const Contact = () => {
             variants={fadeIn("up", 0.7)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="lg:flex flex-1 max-w-[400px] lg:max-w-[800px]"
           >
-            <Image 
-              src="/assets/japan.png" 
-              alt="Japan" 
-              width={800} 
-              height={600} 
+            <Image
+              src="/assets/japan.png"
+              alt="Japan"
+              width={800}
+              height={600}
               className="w-full h-auto"
             />
           </motion.div>

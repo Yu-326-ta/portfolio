@@ -119,13 +119,13 @@ const Skills = () => {
 
   const SkillCard = ({ tech }: { tech: { src: string; title: string } }) => (
     <div className="flex-shrink-0 mx-3 sm:mx-6">
-      <div className="w-20 h-20 sm:w-32 sm:h-32 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-3 sm:p-6 flex items-center justify-center border border-white/30 hover:border-accent/70 hover:shadow-lg hover:shadow-accent/20 transition-all duration-500 hover:scale-105 group">
+      <div className="w-20 h-20 sm:w-32 sm:h-32 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-3 sm:p-6 flex items-center justify-center border border-white/30 hover:border-accent/70 transition-colors duration-300 group">
         <Image
           src={tech.src}
           alt={tech.title}
           width={60}
           height={60}
-          className="w-10 h-10 sm:w-16 sm:h-16 object-contain group-hover:scale-110 transition-transform duration-300"
+          className="w-10 h-10 sm:w-16 sm:h-16 object-contain"
         />
       </div>
       <p className="text-white text-center mt-2 sm:mt-4 text-xs sm:text-base font-semibold tracking-wide">
@@ -135,14 +135,17 @@ const Skills = () => {
   );
 
   return (
-    <section className="section pt-0 lg:pt-32 pb-32 overflow-hidden" id="skills">
+    <section
+      className="section pt-0 lg:pt-32 pb-32 overflow-hidden"
+      id="skills"
+    >
       <div className="container mx-auto">
         {/* Title Section */}
         <motion.div
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.3 }}
           className={`font-bold leading-[0.8] pt-24 text-center mb-32 ${
             language === "ja"
               ? "text-[40px] lg:text-[80px]"
@@ -156,7 +159,9 @@ const Skills = () => {
           >
             {t("skills.subtitle")}
           </p>
-          <h2 className={`${styles.sectionHeadText} text-center`}>{t("skills.title")}</h2>
+          <h2 className={`${styles.sectionHeadText} text-center`}>
+            {t("skills.title")}
+          </h2>
         </motion.div>
 
         {/* Scrolling Skills */}
@@ -165,6 +170,7 @@ const Skills = () => {
           <div className="relative">
             <motion.div
               className="flex"
+              style={{ willChange: "transform" }}
               animate={{
                 x: [0, -1000],
               }}
@@ -172,7 +178,7 @@ const Skills = () => {
                 x: {
                   repeat: Infinity,
                   repeatType: "loop",
-                  duration: 30,
+                  duration: 40,
                   ease: "linear",
                 },
               }}
@@ -196,6 +202,7 @@ const Skills = () => {
           <div className="relative">
             <motion.div
               className="flex"
+              style={{ willChange: "transform" }}
               animate={{
                 x: [-1000, 0],
               }}
@@ -203,7 +210,7 @@ const Skills = () => {
                 x: {
                   repeat: Infinity,
                   repeatType: "loop",
-                  duration: 30,
+                  duration: 40,
                   ease: "linear",
                 },
               }}

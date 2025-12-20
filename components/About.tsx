@@ -134,7 +134,7 @@ const Experience = () => {
         variants={fadeIn("up", 0.3)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.3 }}
         className={`font-bold leading-[0.8] pt-24 ${
           language === "ja"
             ? "text-[40px] lg:text-[80px]"

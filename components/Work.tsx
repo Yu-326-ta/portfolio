@@ -172,7 +172,7 @@ const Work = () => {
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.3 }}
           className={`font-bold leading-[0.8] text-center mb-12 ${
             language === "ja"
               ? "text-[40px] lg:text-[80px]"
@@ -196,7 +196,7 @@ const Work = () => {
           variants={fadeIn("up", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="relative px-0 lg:px-12"
         >
           <Swiper
@@ -249,7 +249,7 @@ const Work = () => {
           variants={fadeIn("up", 0.6)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.3 }}
           className="text-center mt-20"
         >
           <div className="bg-gradient-to-r from-accent/10 to-purple-500/10 backdrop-blur-sm rounded-3xl p-8 border border-white/10 max-w-4xl mx-auto">
@@ -292,9 +292,10 @@ const Work = () => {
           align-items: center;
         }
         .work-swiper .swiper-slide {
-          transition: all 0.4s ease;
+          transition: transform 0.3s ease, opacity 0.3s ease;
           opacity: 0.4;
           transform: scale(0.75);
+          will-change: transform, opacity;
         }
         .work-swiper .swiper-slide-active {
           opacity: 1;

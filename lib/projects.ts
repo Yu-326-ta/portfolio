@@ -1,13 +1,13 @@
 export const projects = [
   {
     id: 1,
-    title: "EatPass",
+    title: "GoPass",
     description:
-      "A modern restaurant reservation and table management platform with real-time booking system and seamless user experience.",
-    image: "/assets/products/eatpass.png",
+      "A fast-pass ticket service for restaurants that lets you skip the line and enter popular restaurants without waiting.",
+    image: "/assets/products/gopass.png",
     technologies: ["Next.js", "Supabase", "AWS", "Tailwind CSS"],
     category: "Web Application",
-    link: "https://www.eatpass.jp/ja",
+    link: "https://gopass.jp/ja",
   },
   {
     id: 2,

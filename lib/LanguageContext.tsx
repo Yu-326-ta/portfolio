@@ -67,8 +67,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.button": "Go to Contact Form",
 
     // Projects
-    "project.eatpass.description":
-      "A modern restaurant reservation and table management platform with real-time booking system and seamless user experience.",
+    "project.gopass.description":
+      "A fast-pass ticket service for restaurants that lets you skip the line and enter popular restaurants without waiting.",
     "project.procra.description":
       "An innovative mobile application for AI prompt management and optimization with intuitive user interface and cloud synchronization.",
     "project.portfolio.description":
@@ -188,8 +188,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.button": "お問い合わせフォームへ",
 
     // Projects
-    "project.eatpass.description":
-      "リアルタイム予約システムとシームレスなユーザー体験を備えた、モダンなレストラン予約・テーブル管理プラットフォーム。",
+    "project.gopass.description":
+      "飲食店に特化した優先入店チケットサービス。行列をスキップして、人気店に待ち時間なく入店できる。",
     "project.procra.description":
       "直感的なUIとクラウド同期機能を備えた、AIプロンプト管理・最適化のための革新的なモバイルアプリケーション。",
     "project.portfolio.description":

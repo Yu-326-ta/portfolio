@@ -28,12 +28,12 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "EatPass",
-    descriptionKey: "project.eatpass.description",
-    image: "/assets/products/eatpass.png",
+    title: "GoPass",
+    descriptionKey: "project.gopass.description",
+    image: "/assets/products/gopass.png",
     technologies: ["Next.js", "Supabase", "AWS", "Tailwind CSS"],
     categoryKey: "project.category.webapp",
-    link: "https://www.eatpass.jp/ja",
+    link: "https://gopass.jp/ja",
   },
   {
     id: 2,

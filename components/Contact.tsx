@@ -62,7 +62,7 @@ const Contact = () => {
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
               <Link
-                href="https://www.newr.jp/contact"
+                href="https://www.yureate.com/contact"
                 target="_blank"
                 rel="noopener noreferrer"
               >

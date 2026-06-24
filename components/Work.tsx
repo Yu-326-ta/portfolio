@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 import { styles } from "@/lib/styles";
@@ -300,9 +301,15 @@ const Work = () => {
                   </p>
                 ))}
             </div>
-            <Button variant="gradient" className="btn-lg">
-              {t("work.getInTouch")}
-            </Button>
+            <Link
+              href="https://www.yureate.com/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="gradient" className="btn-lg">
+                {t("work.getInTouch")}
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </div>

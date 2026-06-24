@@ -116,7 +116,7 @@ const Banner = () => {
                 </Button>
               </ScrollLink>
               <Link
-                href="https://www.newr.jp/"
+                href="https://www.yureate.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative px-6 py-3 font-secondary font-semibold text-white overflow-hidden rounded-full"

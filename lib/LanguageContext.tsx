@@ -69,6 +69,8 @@ const translations: Record<Language, Record<string, string>> = {
     // Projects
     "project.gopass.description":
       "A fast-pass ticket service for restaurants that lets you skip the line and enter popular restaurants without waiting.",
+    "project.tumikin.description":
+      "A fitness RPG app combining workout tracking and meal logging. Train your character to grow and enjoy on both mobile and web.",
     "project.procra.description":
       "An innovative mobile application for AI prompt management and optimization with intuitive user interface and cloud synchronization.",
     "project.portfolio.description":
@@ -79,6 +81,10 @@ const translations: Record<Language, Record<string, string>> = {
       "An RPG-style task management application that gamifies productivity with engaging quests and character progression.",
     "project.newr.description":
       "The official website for Newr LLC, showcasing company services, philosophy, and products including EatPass.",
+    "project.aioDiagnostic.description":
+      "A tool that diagnoses your website's AIO optimization score and visualizes areas for improvement.",
+    "project.yureate.description":
+      "The official website for Yureate LLC, showcasing contract development, in-house products, and technical consulting services.",
     "project.category.webapp": "Web Application",
     "project.category.website": "Website",
     "project.category.mobile": "Mobile App",
@@ -190,6 +196,8 @@ const translations: Record<Language, Record<string, string>> = {
     // Projects
     "project.gopass.description":
       "飲食店に特化した優先入店チケットサービス。行列をスキップして、人気店に待ち時間なく入店できる。",
+    "project.tumikin.description":
+      "筋トレ×食事記録×RPGのフィットネスアプリ。トレーニングでキャラが成長し、モバイル・Webの両方で利用できる。",
     "project.procra.description":
       "直感的なUIとクラウド同期機能を備えた、AIプロンプト管理・最適化のための革新的なモバイルアプリケーション。",
     "project.portfolio.description":
@@ -200,6 +208,10 @@ const translations: Record<Language, Record<string, string>> = {
       "RPG風のタスク管理アプリ。クエストやキャラクター成長要素を取り入れて、生産性をゲーミフィケーションする。",
     "project.newr.description":
       "合同会社Newrの公式サイト。会社のサービス、理念、EatPassを含むプロダクトを紹介。",
+    "project.aioDiagnostic.description":
+      "WebサイトのAIO対策スコアを診断し、改善点を可視化するツール",
+    "project.yureate.description":
+      "合同会社Yureateの公式サイト。受託開発・自社プロダクト・技術コンサルなどのサービスと実績を紹介。",
     "project.category.webapp": "Webアプリ",
     "project.category.website": "WEBサイト",
     "project.category.mobile": "モバイルアプリ",

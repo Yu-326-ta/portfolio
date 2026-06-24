@@ -27,6 +27,15 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 9,
+    title: "Tumikin",
+    descriptionKey: "project.tumikin.description",
+    image: "/assets/products/tumikin.png",
+    technologies: ["React Native", "Expo", "Supabase", "GCP"],
+    categoryKey: "project.category.mobile",
+    link: "https://www.yureate.com/#product",
+  },
+  {
     id: 1,
     title: "GoPass",
     descriptionKey: "project.gopass.description",
@@ -63,15 +72,6 @@ const projects: Project[] = [
     link: "https://www.aio-marketing.net/",
   },
   {
-    id: 5,
-    title: "Adventura",
-    descriptionKey: "project.adventura.description",
-    image: "/assets/products/adventura.png",
-    technologies: ["Next.js", "Tailwind CSS", "Supabase", "AWS"],
-    categoryKey: "project.category.webapp",
-    link: "https://adventura.jp/",
-  },
-  {
     id: 6,
     title: "Newr HP",
     descriptionKey: "project.newr.description",
@@ -79,6 +79,33 @@ const projects: Project[] = [
     technologies: ["Next.js", "Tailwind CSS"],
     categoryKey: "project.category.website",
     link: "https://www.newr.jp/",
+  },
+  {
+    id: 7,
+    title: "AIOスコア診断ツール",
+    descriptionKey: "project.aioDiagnostic.description",
+    image: "/assets/products/aio-diagnostic-tool.png",
+    technologies: ["Next.js", "Tailwind CSS"],
+    categoryKey: "project.category.website",
+    link: "https://aio-diagnostic-tool.vercel.app/",
+  },
+  {
+    id: 8,
+    title: "Yureate HP",
+    descriptionKey: "project.yureate.description",
+    image: "/assets/products/yureate.png",
+    technologies: ["Next.js", "Tailwind CSS", "Claude"],
+    categoryKey: "project.category.website",
+    link: "https://www.yureate.com/",
+  },
+  {
+    id: 5,
+    title: "Adventura",
+    descriptionKey: "project.adventura.description",
+    image: "/assets/products/adventura.png",
+    technologies: ["Next.js", "Tailwind CSS", "Supabase", "AWS"],
+    categoryKey: "project.category.webapp",
+    link: "https://adventura.jp/",
   },
 ];
 
@@ -292,7 +319,9 @@ const Work = () => {
           align-items: center;
         }
         .work-swiper .swiper-slide {
-          transition: transform 0.3s ease, opacity 0.3s ease;
+          transition:
+            transform 0.3s ease,
+            opacity 0.3s ease;
           opacity: 0.4;
           transform: scale(0.75);
           will-change: transform, opacity;

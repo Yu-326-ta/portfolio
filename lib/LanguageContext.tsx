@@ -129,11 +129,19 @@ const translations: Record<Language, Record<string, string>> = {
 
     "exp.newr.title": "CTO",
     "exp.newr.company": "Newr LLC",
-    "exp.newr.date": "December 2025 - Present",
+    "exp.newr.date": "December 2025 - April 2026",
     "exp.newr.point1": "Founded Newr LLC",
     "exp.newr.point2": "Leading technology strategy and development as CTO",
     "exp.newr.point3":
       "Handling all development from in-house product implementation to contract development",
+
+    "exp.yureate.title": "CEO",
+    "exp.yureate.company": "Yureate LLC",
+    "exp.yureate.date": "May 2026 - Present",
+    "exp.yureate.point1": "Founded Yureate LLC",
+    "exp.yureate.point2":
+      "Primarily engaged in contract development, while also developing in-house products",
+    "exp.yureate.point3": "Handling all development-related work",
   },
   ja: {
     // Navigation
@@ -237,10 +245,17 @@ const translations: Record<Language, Record<string, string>> = {
 
     "exp.newr.title": "CTO",
     "exp.newr.company": "合同会社Newr",
-    "exp.newr.date": "2025年12月 - 現在",
+    "exp.newr.date": "2025年12月 - 2026年4月",
     "exp.newr.point1": "合同会社Newrを創立",
     "exp.newr.point2": "CTOとして技術戦略と開発をリード",
     "exp.newr.point3": "自社プロダクトの実装から受託開発まで、開発を全て担当",
+
+    "exp.yureate.title": "CEO",
+    "exp.yureate.company": "合同会社Yureate",
+    "exp.yureate.date": "2026年5月 - 現在",
+    "exp.yureate.point1": "合同会社Yureateを創立",
+    "exp.yureate.point2": "受託開発を主に、自社プロダクトの開発も行なっている",
+    "exp.yureate.point3": "開発に関する業務は全て担当",
   },
 };
 

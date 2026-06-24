@@ -70,6 +70,14 @@ const experiences: Experience[] = [
     dateKey: "exp.newr.date",
     pointKeys: ["exp.newr.point1", "exp.newr.point2", "exp.newr.point3"],
   },
+  {
+    titleKey: "exp.yureate.title",
+    companyKey: "exp.yureate.company",
+    icon: "/assets/company/yureate.png",
+    iconBg: "#FFFFFF",
+    dateKey: "exp.yureate.date",
+    pointKeys: ["exp.yureate.point1", "exp.yureate.point2", "exp.yureate.point3"],
+  },
 ];
 
 const ExperienceCard = ({ experience }: { experience: Experience }) => {
